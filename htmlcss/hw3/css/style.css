@@ -35,7 +35,7 @@
     padding-top: 12px;
     padding-left: 24px;
     text-align: left;
-    font-size: 15.1px;
+    font-size: 15px;
     color: #ffffff;
     font-family: monospace;
 }
@@ -100,14 +100,15 @@ aside {
 }
 
 .velo-text {
+    display: inline-block;
     font-size: 14px;
     font-family: monospace;
     width: 663px;
-    height: 193px;
-    margin-left: 351px;
-    margin-top: 479px;
+    height: 180px;
+    margin-left: 340px;
+    margin-top: 34px;
     color: #2c2c2c;
-    line-height: 21.4px
+    line-height: 21px;
 }
 
 
@@ -130,7 +131,7 @@ aside {
     padding-top: 12px;
     padding-left: 24px;
     text-align: left;
-    font-size: 15.1px;
+    font-size: 15px;
     font-family: monospace;
 }
 
@@ -140,4 +141,16 @@ aside {
 
 .link-footer {
     color: #2c2c2c;
+}
+
+.footer-regist {
+    text-align: right;
+    width: 421px;
+    height: 15px;
+    margin-left: -40px;
+    margin-top: 14px;
+    font-family: monospace;
+    font-size: 15px;
+    color: #2c2c2c;
+    position: absolute;
 }
