@@ -1,8 +1,9 @@
 body {
     background-image: url(../img/bg/bg.png);
     width: 1280px;
-    height: 1024px;
+    height: 1050px;
     background-repeat: repeat-y;
+    background-size: contain;
 }
 
 .conteiner {
@@ -182,7 +183,7 @@ ul.menu > li:hover > ul.submenu {
 /*SIDEBAR*/
 
 .fon {
-    width: 1150px;
+    width: 1050px;
     margin-left: 0px;
     overflow: hidden;
 }
