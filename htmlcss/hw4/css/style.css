@@ -1,0 +1,249 @@
+body {
+    background-image: url(../img/bg/bg.png);
+    width: 1280px;
+    height: 1024px;
+    background-repeat: repeat-y;
+}
+
+.conteiner {
+    background-color: white;
+    width: 1000px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.75);
+}
+
+.logo {
+    float: left;
+    margin-left: 29px;
+    margin-top: 13px;
+}
+
+.contacts {
+    float: right;
+    margin-right: 27px;
+    margin-top: 15px;
+    color: #128aa7;
+    font-size: 15px;
+    font-family: tahoma;
+}
+
+b {
+    font-weight: bold;
+}
+
+.contries {
+    float: right;
+    margin-top: -67px;
+    margin-right: 171px;
+    position: absolute;
+    top: 181px;
+    left: 631px;
+    height: 200px;
+    width: 373px;
+    font-family: tahoma;
+}
+
+.box-contries {
+    position: relative;
+    height: 417px;
+}
+
+.contri {
+    padding-left: 10px;
+}
+
+.contri-ul li {
+    float: right;
+    margin-top: -5px;
+    margin-left: -301px;
+    padding-left: 51px;
+    margin-right: 270px;
+}
+
+.contri-name {
+    font-size: 10px;
+}
+
+.tibet {
+    position: relative;
+    right: -244px
+}
+
+.india {
+    position: relative;
+    right: -226px
+}
+
+.nepal {
+    position: relative;
+    right: -235px
+}
+
+.bhutan {
+    position: relative;
+    right: -253px
+}
+
+.maldives {
+    position: relative;
+    right: -238px
+}
+
+.sri-lanka {
+    position: relative;
+    right: -252px
+}
+
+.photo {
+    margin-left: 0px;
+    margin-top: -4px;
+}
+
+
+/*HEADER*/
+
+header {
+    width: 1004px;
+    margin-left: -2px;
+}
+
+.panel {
+    margin-top: -2px;
+}
+
+.menu {
+    display: block;
+    margin-top: -41px;
+    padding: 0;
+    width: 1004px;
+    height: 35px;
+}
+
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+    margin-left: 37px;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: tahoma;
+}
+
+ul.menu > li > a:hover {}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    top: 29px;
+    background-color: white;
+    text-align: center;
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-image: url(../img/central-panel/dropdown/dropdown.png);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    -webkit-box-shadow: 8px 7px 17px -3px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 7px 17px -3px rgba(0, 0, 0, 1);
+    box-shadow: 8px 7px 17px -3px rgba(0, 0, 0, 1);
+    font-family: tahoma;
+}
+
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+
+/*SIDEBAR*/
+
+.fon {
+    width: 1150px;
+    margin-left: 0px;
+    overflow: hidden;
+}
+
+.leftColumn {
+    width: 188px;
+    float: left;
+    color: #424c43;
+    background: #edeef0;
+    border: 1px solid #c7cacf;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    font-family: tahoma;
+    line-height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.centerColumn {
+    width: 559px;
+    float: left;
+    color: #424c43;
+    background: #ffffff;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    font-family: tahoma;
+    line-height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rightColumn {
+    width: 189px;
+    float: left;
+    color: #424c43;
+    background: #edeef0;
+    border: 1px solid #c7cacf;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    font-family: tahoma;
+    line-height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.colum-bold {
+    font-weight: bold;
+    font-size: 18px;
+    color: #424c43;
+    text-align: center;
+}
+
+
+/*FOOTER*/
+
+footer {
+    clear: both;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: tahoma;
+}
