@@ -11,8 +11,8 @@ body {
     width: 1000px;
     margin-left: 150px;
     margin-bottom: 30px;
-    -webkit-box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.75);
     box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.75);
 }
 
@@ -144,8 +144,6 @@ ul.menu > li > a {
     font-family: tahoma;
 }
 
-ul.menu > li > a:hover {}
-
 ul.submenu {
     display: none;
     position: absolute;
@@ -165,8 +163,8 @@ ul.submenu > li > a {
     background-image: url(../img/central-panel/dropdown/dropdown.png);
     background-repeat: no-repeat;
     text-decoration: none;
-    -webkit-box-shadow: 8px 7px 17px -3px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 8px 7px 17px -3px rgba(0, 0, 0, 1);
+    box-shadow: 8px 7px 17px -3px rgba(0, 0, 0, 1);
+    box-shadow: 8px 7px 17px -3px rgba(0, 0, 0, 1);
     box-shadow: 8px 7px 17px -3px rgba(0, 0, 0, 1);
     font-family: tahoma;
 }
@@ -177,6 +175,33 @@ ul.submenu > li > a:hover {
 
 ul.menu > li:hover > ul.submenu {
     display: block;
+}
+
+.wend-left {
+    position: absolute;
+    display: inline-block;
+    height: 6px;
+    width: 5px;
+    top: 424px;
+    left: 414px;
+}
+
+.wend-center {
+    position: absolute;
+    display: inline-block;
+    height: 6px;
+    width: 5px;
+    top: 424px;
+    left: 520px;
+}
+
+.wend-right {
+    position: absolute;
+    display: inline-block;
+    height: 6px;
+    width: 5px;
+    top: 424px;
+    left: 658px;
 }
 
 
@@ -248,3 +273,4 @@ footer {
     padding-bottom: 20px;
     font-family: tahoma;
 }
+
