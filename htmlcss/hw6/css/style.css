@@ -117,7 +117,7 @@ body {
     letter-spacing: 0.0px;
 }
 
-.buttom-home-navig-mail {
+.buttom-home-navigation-mail {
     border: 1px solid #d3d8da;
     border-radius: 12px;
     width: 55px;
@@ -135,7 +135,7 @@ body {
     margin-left: -2px;
 }
 
-.buttom-navigsite {
+.buttom-navigation {
     margin-right: 4px;
 }
 
@@ -247,7 +247,7 @@ body {
     border-radius: 12px;
 }
 
-.korzina-img {
+.basket-img {
     position: relative;
     width: 24px;
     left: 684px;
@@ -306,7 +306,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.form-left-diski {
+.form-left-wheels {
     font-size: 10px;
     font-weight: 900;
     color: #154468;
@@ -327,7 +327,7 @@ body {
     letter-spacing: 0.3px;
 }
 
-.form-left-shunu {
+.form-left-tires {
     font-size: 10px;
     font-weight: 900;
     color: #154468;
@@ -349,7 +349,7 @@ body {
     padding-top: 9px;
 }
 
-.text-marka {
+.text-mark {
     font-weight: bold;
     font-size: 10px;
 }
@@ -360,7 +360,7 @@ body {
     font-size: 10px;
 }
 
-.text-god {
+.text-year {
     display: inline-block;
     width: 69px;
     font-weight: bold;
@@ -370,7 +370,7 @@ body {
     letter-spacing: -0.4px;
 }
 
-.text-complect {
+.text-complects {
     display: inline-block;
     font-weight: bold;
     font-size: 10px;
@@ -380,7 +380,7 @@ body {
     letter-spacing: -0.1px;
 }
 
-.text-marka2 {
+.text-mark2 {
     display: inline-block;
     font-size: 8px;
     color: #77858b;
@@ -395,7 +395,7 @@ body {
     letter-spacing: 0.9px;
 }
 
-.text-god2 {
+.text-year2 {
     position: relative;
     top: -18px;
     letter-spacing: 0.8px;
@@ -416,7 +416,7 @@ body {
     padding-top: 9px;
 }
 
-.text-marka-right {
+.text-mark-right {
     position: relative;
     top: -18px;
     font-weight: bold;
@@ -432,7 +432,7 @@ body {
     font-size: 10px;
 }
 
-.text-god-right {
+.text-year-right {
     display: inline-block;
     width: 73px;
     font-weight: bold;
@@ -443,7 +443,7 @@ body {
     letter-spacing: -0.3px;
 }
 
-.text-complect-right {
+.text-complects-right {
     display: inline-block;
     font-weight: bold;
     font-size: 10px;
@@ -453,7 +453,7 @@ body {
     letter-spacing: -0.1px;
 }
 
-.text-marka2-right {
+.text-mark2-right {
     position: relative;
     top: -18px;
     left: -1px;
@@ -472,7 +472,7 @@ body {
     letter-spacing: 0.9px;
 }
 
-.text-god2-right {
+.text-year2-right {
     position: relative;
     top: 28px;
     letter-spacing: 0.8px;
@@ -496,7 +496,7 @@ body {
     left: 94px;
 }
 
-.input-marka {
+.input-mark {
     width: 97px;
     height: 11px;
     box-shadow: -1px -1px 1px 0px #c1c1c1;
@@ -509,14 +509,14 @@ body {
     box-shadow: -1px -1px 1px 0px #c1c1c1;
 }
 
-.input-god {
+.input-year {
     width: 54px;
     height: 11px;
     margin-top: 4px;
     box-shadow: -1px -1px 1px 0px #c1c1c1;
 }
 
-.input-complit {
+.input-complects {
     width: 97px;
     height: 11px;
     margin-top: 4px;
@@ -534,7 +534,7 @@ body {
     left: 298px;
 }
 
-.input-marka-right {
+.input-mark-right {
     width: 97px;
     height: 11px;
     box-shadow: -1px -1px 1px 0px #c1c1c1;
@@ -547,14 +547,14 @@ body {
     box-shadow: -1px -1px 1px 0px #c1c1c1;
 }
 
-.input-god-right {
+.input-year-right {
     width: 54px;
     height: 11px;
     margin-top: 6px;
     box-shadow: -1px -1px 1px 0px #c1c1c1;
 }
 
-.input-complit-right {
+.input-complects-right {
     width: 97px;
     height: 11px;
     margin-top: 4px;
@@ -676,7 +676,7 @@ body {
     margin-left: 2px;
 }
 
-.shunu-sidebar {
+.tires-sidebar {
     width: 148px;
     height: 25px;
     margin-top: 13px;
@@ -684,12 +684,12 @@ body {
     border-radius: 12px;
 }
 
-.shunu-sidbar-img {
+.tires-sidbar-img {
     margin-top: 1px;
     margin-left: 4px;
 }
 
-.shunu-text {
+.tires-text {
     position: relative;
     font-size: 14px;
     color: #114165;
@@ -700,22 +700,22 @@ body {
 
 /* SHUNU*/
 
-.shunu-spisok {
+.tires-list {
     font-size: 13px;
     margin-left: 35px;
     margin-top: -4px;
 }
 
-.shunu-li {
+.tires-li {
     margin-top: 12px;
 }
 
-.shunu-link {
+.tires-link {
     color: #465961;
     text-decoration: none;
 }
 
-.shunu-link:hover {
+.tires-link:hover {
     font-size: 13px;
     color: #0c3256;
     text-decoration: underline;
@@ -727,9 +727,9 @@ body {
 /* SHUNU*/
 
 
-/*DISKI*/
+/*wheels*/
 
-.diski-sidebar {
+.wheels-sidebar {
     width: 148px;
     height: 25px;
     margin-top: 5px;
@@ -737,12 +737,12 @@ body {
     border-radius: 12px;
 }
 
-.diski-sidbar-img {
+.wheels-sidbar-img {
     margin-top: 1px;
     margin-left: 4px;
 }
 
-.diski-text {
+.wheels-text {
     position: relative;
     font-size: 14px;
     color: #114165;
@@ -750,22 +750,22 @@ body {
     left: -2px;
 }
 
-.diski-spisok {
+.wheels-list {
     font-size: 13px;
     margin-left: 35px;
     margin-top: -3px;
 }
 
-.diski-li {
+.wheels-li {
     margin-top: 12px;
 }
 
-.diski-link {
+.wheels-link {
     color: #465961;
     text-decoration: none;
 }
 
-.diski-link:hover {
+.wheels-link:hover {
     font-size: 13px;
     color: #0c3256;
     text-decoration: underline;
@@ -774,12 +774,12 @@ body {
 }
 
 
-/*DISKI*/
+/*wheels*/
 
 
-/*BOLTU*/
+/*bolts*/
 
-.boltu-sidebar {
+.bolts-sidebar {
     width: 148px;
     height: 25px;
     margin-top: 4px;
@@ -787,12 +787,12 @@ body {
     border-radius: 12px;
 }
 
-.boltu-sidbar-img {
+.bolts-sidbar-img {
     margin-top: 1px;
     margin-left: 4px;
 }
 
-.boltu-text {
+.bolts-text {
     position: relative;
     font-size: 14px;
     color: #114165;
@@ -800,22 +800,22 @@ body {
     left: -2px;
 }
 
-.boltu-spisok {
+.bolts-list {
     font-size: 13px;
     margin-left: 35px;
     margin-top: -4px;
 }
 
-.boltu-li {
+.bolts-li {
     margin-top: 12px;
 }
 
-.boltu-link {
+.bolts-link {
     color: #465961;
     text-decoration: none;
 }
 
-.boltu-link:hover {
+.bolts-link:hover {
     font-size: 13px;
     color: #0c3256;
     text-decoration: underline;
@@ -824,7 +824,7 @@ body {
 }
 
 
-/*BOLTU*/
+/*bolts*/
 
 .sidebar-right {
     margin-top: 24px;
@@ -857,7 +857,7 @@ body {
     margin-left: 2px;
 }
 
-.shunu-sidebar-right {
+.tires-sidebar-right {
     width: 133px;
     height: 25px;
     margin-top: 13px;
@@ -866,12 +866,12 @@ body {
     border-radius: 12px;
 }
 
-.shunu-sidbar-img-right {
+.tires-sidbar-img-right {
     margin-top: 1px;
     margin-left: 4px;
 }
 
-.shunu-text-right {
+.tires-text-right {
     position: relative;
     font-size: 14px;
     color: #114165;
@@ -880,9 +880,9 @@ body {
 }
 
 
-/* SHUNU*/
+/* tires*/
 
-.shunu-spisok-right {
+.tires-list-right {
     color: #465961;
     font-size: 13px;
     margin-left: 18px;
@@ -890,12 +890,12 @@ body {
 }
 
 
-/* SHUNU*/
+/* tires*/
 
 
-/*DISKI*/
+/*wheels*/
 
-.diski-sidebar-right {
+.wheels-sidebar-right {
     width: 136px;
     height: 25px;
     margin-top: 10px;
@@ -904,12 +904,12 @@ body {
     border-radius: 12px;
 }
 
-.diski-sidbar-img-right {
+.wheels-sidbar-img-right {
     margin-top: 1px;
     margin-left: 4px;
 }
 
-.diski-text-right {
+.wheels-text-right {
     position: relative;
     font-size: 14px;
     color: #114165;
@@ -917,7 +917,7 @@ body {
     left: -2px;
 }
 
-.diski-spisok-right {
+.wheels-list-right {
     color: #465961;
     font-size: 13px;
     margin-left: 17px;
@@ -1180,15 +1180,15 @@ figure {
 
 /*FIGUR-BUTTOM*/
 
-.well1 {
+.wheel1 {
     margin-left: -4px;
     margin-top: 5px;
 }
 
 
-/*BOX-WELL*/
+/*BOX-wheel*/
 
-.box-well-left {
+.box-wheel-left {
     margin-left: 3px;
     margin-top: 1px;
     width: 138px;
@@ -1197,7 +1197,7 @@ figure {
     border-radius: 7px;
 }
 
-.box-well-left2 {
+.box-wheel-left2 {
     margin-left: 3px;
     margin-top: 1px;
     width: 138px;
@@ -1206,7 +1206,7 @@ figure {
     border-radius: 7px;
 }
 
-.box-well-left3 {
+.box-wheel-left3 {
     margin-left: 3px;
     margin-top: 2px;
     width: 138px;
@@ -1215,7 +1215,7 @@ figure {
     border-radius: 7px;
 }
 
-.box-well-center {
+.box-wheel-center {
     margin-left: 1px;
     margin-top: 1px;
     width: 138px;
@@ -1224,7 +1224,7 @@ figure {
     border-radius: 7px;
 }
 
-.box-well-center2 {
+.box-wheel-center2 {
     margin-left: 0px;
     margin-top: 1px;
     width: 138px;
@@ -1233,7 +1233,7 @@ figure {
     border-radius: 7px;
 }
 
-.box-well-center3 {
+.box-wheel-center3 {
     margin-left: 1px;
     margin-top: 1px;
     width: 138px;
@@ -1242,7 +1242,7 @@ figure {
     border-radius: 7px;
 }
 
-.box-well-right {
+.box-wheel-right {
     margin-left: -1px;
     margin-top: 1px;
     width: 138px;
@@ -1251,7 +1251,7 @@ figure {
     border-radius: 7px;
 }
 
-.box-well-right2 {
+.box-wheel-right2 {
     margin-left: -1px;
     margin-top: 1px;
     width: 138px;
@@ -1260,7 +1260,7 @@ figure {
     border-radius: 7px;
 }
 
-.box-well-right3 {
+.box-wheel-right3 {
     margin-left: -1px;
     margin-top: 0px;
     width: 138px;
@@ -1270,7 +1270,7 @@ figure {
 }
 
 
-/*BOX-WELL*/
+/*BOX-wheel*/
 
 
 /*SPONSORS*/
@@ -1321,7 +1321,7 @@ nav {
     letter-spacing: 0.2px;
 }
 
-.aftor {
+.author {
     width: 160px;
     font-family: Arial;
     padding-top: 15px;
