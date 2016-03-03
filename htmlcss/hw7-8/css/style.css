@@ -25,7 +25,9 @@
 
 
 /*FONT*/
-
+html{
+  overflow-x:hidden;
+}
 body {
   margin: 0 auto;
 }
@@ -40,7 +42,7 @@ header {
 }
 
 .wrapper {
-  width: 945px;
+  width: 960px;
   height: 100%;
   margin: 0 auto;
 }
@@ -270,11 +272,41 @@ header {
   display: inline-block;
   width: 387px;
   height: 292px;
-  background: url(../img/Body/Testimonials/testimonial.png) center no-repeat;
   padding-left: 70px;
-  padding-top: 132px;
-}
+  margin-top: 100px;
 
+}
+.blog__box1__container{
+  display: inline-block;
+  width: 400px;
+  height: 243px;
+  box-shadow: 0px 0.8px 0px 1px rgb(224, 224, 224);
+  margin-left: -44px;
+  background-color: white;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.blog__box1__img{
+  position: relative;
+  top: -250px;
+  left: -70px;
+
+}
+.blog__box1__h1{
+  font-size: 30px;
+  color: #454545;
+  font-family: 'gothic-regular';
+  margin-bottom: 10px;
+  text-shadow: 0.5px 0.5px 0px rgb(26, 26, 26);
+
+}
+.blog__box1__h1-add{
+  font-size: 30px;
+  color: #edbfff;
+  font-family: 'gothic-regular';  
+  text-shadow: 0.5px 0.5px 0px rgb(26, 26, 26);
+
+}
 .blog__box1__text {
   text-shadow: -0.6px 0px 0px rgb(26, 26, 26);
   color: #454545;
@@ -288,7 +320,7 @@ header {
   position: relative;
   display: inline-block;
   padding-left: 4px;
-  top: 90px;
+  top: -5px;
   left: -285px;
   width: 135px;
 }
@@ -315,7 +347,7 @@ header {
   width: 430px;
   height: 260px;
   padding-left: 70px;
-  margin-top: -330px;
+  margin-top: -305px;
 }
 
 .blog__box2__h1 {
@@ -365,9 +397,10 @@ header {
 }
 
 .blog__box2__down--link {
+  display: inline-block;
   color: #454545;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
-  padding-left: 177px;
+  padding-left: 160px;
 }
 
 
@@ -384,7 +417,7 @@ header {
 }
 
 .blog__sponsor__box {
-  overflow: hidden;
+/*  overflow: hidden;*/
   position: relative;
   padding-left: 70px;
 }
