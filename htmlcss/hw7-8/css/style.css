@@ -18,7 +18,8 @@
 
 @font-face {
   font-family: 'opensans-extrabold';
-  src: url('../font/opensans-extrabold.ttf');
+  src: url('../font/OpenSans-ExtraBold-webfont.eot');
+  src: url('../font/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('../font/OpenSans-ExtraBold-webfont.woff') format('woff'), url('../font/OpenSans-ExtraBold-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
