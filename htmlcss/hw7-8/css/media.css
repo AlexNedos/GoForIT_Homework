@@ -122,7 +122,7 @@
   }
   .menu__link--footer {
     font-size: 20px;
-    padding-left: 3%;
+    margin-left: 4%;
   }
   .footer__design {
     padding-right: 55px;
@@ -337,7 +337,7 @@
   }
   .menu__link--footer {
     font-size: 20px;
-    padding-left: 3%;
+    margin-left: 4%;
   }
   .footer__design {
     padding-right: 150px;
