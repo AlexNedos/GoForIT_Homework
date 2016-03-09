@@ -84,14 +84,14 @@ ul.header__768menu__ul > li > a {
 ul.header__submenu__link {
   display: none;
   position: absolute;
-  top: -6px;
-  left: -22px;
+  top: -7px;
+  left: -49px;
   text-align: center;
 }
 
 ul.header__submenu__link > li > a {
   display: block;
-  padding: 8px;
+  padding: 10px 35px 10px 35px;
   color: white;
   background-color: rgba(54, 41, 62, 0.92);
   background-repeat: no-repeat;
