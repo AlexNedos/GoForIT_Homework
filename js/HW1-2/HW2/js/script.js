@@ -1,20 +1,17 @@
-var fruits = [];
-console.log(fruits);
+var logins = [];
 
 for (var i = 0; i < 5; i++) { 
-  fruits[i] = prompt('Введите имя');
+  logins[i] = prompt('Введите имя');
 }
-console.log(fruits);
 
 var name = prompt('Войти в аккаунт: Введите имя');
-console.log(name);
 
-for (var i = 0; i < fruits.length; i++) {
+for (var i = 0; i < logins.length; i++) {
   
-  if (name == fruits[i]) {
-    message = (fruits[i] + ', вы успешно вошли!');
+  if (name == logins[i]) {
+    message = (logins[i] + ', вы успешно вошли!');
     
-    if (i = fruits.length) continue;
+    if (i = logins.length) continue;
     
   } else {
     message = ('Пользователь не найден.')
