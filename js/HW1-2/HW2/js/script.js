@@ -11,7 +11,7 @@ for (i = 0; i < logins.length; i++) {
   if (name == logins[i]) {
    var message = (logins[i] + ', вы успешно вошли!');
     
-    if (i = logins.length) continue;
+    if (i < logins.length) break;
     
   } else {
     message = ('Пользователь не найден.')
