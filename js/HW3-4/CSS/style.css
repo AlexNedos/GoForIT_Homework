@@ -3,18 +3,13 @@ body{
   background-color: gray;
 }
 
-h1{
-  color: #0f0f36;
-  text-shadow: 1px 1px #8e8e8e;
-  font-size: 25px;
-}
-
 .wrapper{
+  margin: 0 auto;
   border-radius: 30px;
   color: #13132e;
   width: 600px;
   height: 560px;
-  margin: 1%;
+  margin-top: 1%;
   padding-top: 25px;
   padding-bottom: 90px;
   padding-left: 150px;
@@ -26,41 +21,49 @@ h1{
     rgba(0,0,0,.8) 3px 3px 8px -3px;
 }
 
-.header{
+.header__h1{
   text-align: center;
   padding-bottom: 70px;
-}
-
-.header_h1{
   color: #1a1a38;
   font-weight: bold;
+  color: #0f0f36;
+  text-shadow: 1px 1px #8e8e8e;
+  font-size: 25px;
 }
 
-.form_question_input{
-  margin-left: 27px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
 
-.question_h1{
+.question__name{
+  color: #1a1a38;
+  font-weight: bold;
   margin-bottom: 15px;
 }
 
-.answer_text{
-  display: block;
+.question__h2{
+  color: #1a1a38;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+
+.answer__text{
+  color: #242453;
+}
+
+.answer__text:hover{
+  color: #1414e5;
+}
+
+form{
+  margin-left: 420px;
   position: relative;
-  left: 45px;
-  top: -20px;
-  transition: 0.3s;
+  left: -425px;
+  top: -50px;
 }
 
-.answer_text:hover{
-  left: 60px;
-  transition: 0.3s;
-  font-weight: bold;  
+.form__question__input{
+  margin-top: 10px;
 }
 
-.buttom_result{
+.buttom__result{
   box-shadow: 2px 2px 2px #000000;
   font-size: 20px;
   background-color: #2d2d48;
@@ -72,6 +75,6 @@ h1{
   padding: 15px;
 }
 
-.buttom_result:hover{
+.buttom__result:hover{
   background-color: #1f1f31;
 }
