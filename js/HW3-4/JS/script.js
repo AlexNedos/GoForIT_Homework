@@ -1,5 +1,51 @@
 var testProgram = {
-
+  
+  questions: 
+  [
+    {
+      title: '1.Вопрос №1',
+      answers: [
+        {
+          text: 'Вариант ответа №1'
+        },
+        {
+          text: 'Вариант ответа №2'
+        },
+        {
+          text: 'Вариант ответа №3'
+        }
+      ]
+    },
+    {
+      title: '2.Вопрос №2',
+      answers: [
+        {
+          text: 'Вариант ответа №1'
+        },
+        {
+          text: 'Вариант ответа №2'
+        },
+        {
+          text: 'Вариант ответа №3'
+        }
+      ]
+    },
+    {
+      title: '3.Вопрос №3',
+      answers: [
+        {
+          text: 'Вариант ответа №1'
+        },
+        {
+          text: 'Вариант ответа №2'
+        },
+        {
+          text: 'Вариант ответа №3'
+        }
+      ]
+    }	   
+  ],
+  
   testBody:      document.body,
   testWrapper:   document.createElement('div'),
   testHeader:    document.createElement('h1'),
@@ -22,52 +68,53 @@ var testProgram = {
     this.testWrapper.   appendChild(this.testButtom); 
   },
   
-  createTestQuestion: function () {
+  generateElement: function () {
     
     var q = 1;
     
-    for (var i = 1; i < 4; i++) {
-      
+    for(var i = 0; i < this.questions.length; i++) {
+
       var testBoxQuestion =  document.createElement('div');
       var testQuestionH2 =   document.createElement('h2');
       var testForm =         document.createElement('form');
 
-      testQuestionH2.        innerHTML = i + '. Вопрос № ' + i;
-      
+      testQuestionH2.        innerHTML = this.questions[i].title;
+
       testBoxQuestion.       classList.add('question__box');
       testQuestionH2.        classList.add('question__h2');
       testForm.              setAttribute('action', '#');
-      
+
       this.testContent.      appendChild(testBoxQuestion);
       testBoxQuestion.       appendChild(testQuestionH2);
       testBoxQuestion.       appendChild(testForm);
+
+
+    for(var y = 0; y < this.questions[i].answers.length; y++) {
+
+      var formQuestionInput = document.createElement('input');
+      var formQuestionLabel = document.createElement('label');
+
+      formQuestionInput.      classList.add('form__question__input');
+      formQuestionInput.      setAttribute('type', 'checkbox');
+      formQuestionInput.      setAttribute('id', 'question' + q);
+      formQuestionLabel.      setAttribute('for', 'question' + q);
+
+      var formQuestionAnswer = document.createElement('span');
+      formQuestionAnswer.     classList.add('answer__text');
+      formQuestionAnswer.     innerHTML = this.questions[i].answers[y].text;
+
+      testForm.               appendChild(formQuestionInput);
+      testForm.               appendChild(formQuestionLabel);
+      formQuestionLabel.      appendChild(formQuestionAnswer);
       
-      for (var a = 1; a < 4; a++) {
-        
-        var formQuestionInput = document.createElement('input');
-        var formQuestionLabel = document.createElement('label');
-
-        formQuestionInput.      classList.add('form__question__input');
-        formQuestionInput.      setAttribute('type', 'checkbox');
-        formQuestionInput.      setAttribute('id', 'question' + q);
-        formQuestionLabel.      setAttribute('for', 'question' + q);
-
-        var formQuestionAnswer = document.createElement('span');
-        formQuestionAnswer.     classList.add('answer__text');
-        formQuestionAnswer.     innerHTML = 'Вариант ответа №' + a;
-        
-        testForm.               appendChild(formQuestionInput);
-        testForm.               appendChild(formQuestionLabel);
-        formQuestionLabel.      appendChild(formQuestionAnswer);
-        
-        q++;
-      }  
-    }  
-  }  
+      q++;    
+    }
+   }  
+  }
 };
 
 testProgram.createdTest();
-testProgram.createTestQuestion();
+testProgram.generateElement();
 
 
 
