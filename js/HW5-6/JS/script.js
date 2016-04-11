@@ -1,52 +1,85 @@
-var go = document.querySelector('.go');
-var pause = document.querySelector('.pause');
-var clear = document.querySelector('.clear');
-var timer = document.querySelector('.timer__text');
-var milisecond = document.querySelector('.milisecond__text');
+var buttonStart = document.querySelector('.start');
+var buttonReset = document.querySelector('.reset');
+var buttonSplit = document.querySelector('.split');
+var splitList = document.querySelector('.split__list');
 
+var mil;
+var sec;
+var min;
+var hour;
 
-
-
-go.addEventListener('click', callbackGo);
-pause.addEventListener('click', callbackPause);
-
-
-
-
-function callbackGo() {
- timerId = setInterval(test, 1000);
- timerId2 = setInterval(mili, 1);
-  pause.style.display = 'block'; 
-  m = QWE;
-}
-function callbackPause() {
-  clearInterval(timerId);
-  clearInterval(timerId2);
-  pause.style.display = 'none'; 
-  QWE = m;
-}
+var time = 0;
+var run = 0;
 var q = 0;
-var a = 0;
-var m = 0;
-var s = 0;
+var spl = 0;
 
-function test() {
-//  q++;
-  timer.innerHTML = s + ':' + a + ':' + q;
-  if (q == 59){
-    q = -1;
-    a++;
-  }
-  if (a == 59){
-    a = 0;
-    s++;
-  }
-}
-function mili() {
-  m += 4;
-  milisecond.innerHTML = m;
-  if (m == 996){
-    m = 0;
+buttonStart.addEventListener('click', startPause);
+buttonReset.addEventListener('click', reset);
+buttonSplit.addEventListener('click', split);
+
+function startPause() { 
+  if (run == 0){
+    spl = 1;
+    run = 1;
+    timer();
+    document.querySelector('.start__text').innerHTML = 'Pause';
+  } else{
+    run = 0;
+    document.querySelector('.start__text').innerHTML = 'Resume';
+    var splitListItem2 = document.createElement('p');
     q++;
+    splitListItem2.classList.add('split__list__item2');
+    splitListItem2.innerHTML = 'Stop ' + [q] + ' - ' + hour + ':' + min + ':' + sec + ' ' + ' ' + mil;
+    splitList.appendChild(splitListItem2);
   }
 }
+
+function reset() {
+  spl = 0;
+  q = 0;
+  run = 0;
+  time = -4;
+  document.querySelector('.start__text').innerHTML = 'Start';
+  document.querySelector('.timer__text').innerHTML = '00:00:00';
+  document.querySelector('.milisecond__text').innerHTML = '0';
+  splitList.innerHTML = '';
+}
+
+function split() {
+  if (spl == 1){
+    var splitListItem = document.createElement('p');
+    q++;
+    splitListItem.classList.add('split__list__item');
+    splitListItem.innerHTML = 'Split ' + [q] + ' - ' + hour + ':' + min + ':' + sec + ' ' + ' ' + mil;
+    splitList.appendChild(splitListItem);
+  } 
+}
+
+function timer() {
+  if (run == 1){
+    setTimeout(function () {
+      time += 4;
+      this.mil = time % 999;
+      this.sec = Math.floor(time / 999 % 60);
+      this.min = Math.floor(time / 999 / 60);
+      this.hour = Math.floor(time / 999 / 60 / 60);
+
+      if(hour < 10){
+        hour = '0' + hour;
+      }
+      if(min < 10){
+        min = '0' + min;
+      }
+      if(sec < 10){
+        sec = '0' + sec;
+      }
+      document.querySelector('.timer__text').innerHTML = hour + ':' + min + ':' + sec;
+      document.querySelector('.milisecond__text').innerHTML = mil;
+      timer();
+    }, 1);
+  }
+}
+
+
+
+
