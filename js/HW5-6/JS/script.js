@@ -17,19 +17,20 @@ buttonStart.addEventListener('click', startPause);
 buttonReset.addEventListener('click', reset);
 buttonSplit.addEventListener('click', split);
 
-function startPause() { 
-  if (run == 0){
+function startPause() {
+  if (run == 0) {
     spl = 1;
     run = 1;
     timer();
     document.querySelector('.start__text').innerHTML = 'Pause';
-  } else{
+  } else {
     run = 0;
     document.querySelector('.start__text').innerHTML = 'Resume';
     var splitListItem2 = document.createElement('p');
     q++;
+    time -= 4;
     splitListItem2.classList.add('split__list__item2');
-    splitListItem2.innerHTML = 'Stop ' + [q] + ' - ' + hour + ':' + min + ':' + sec + ' ' + ' ' + mil;
+    splitListItem2.innerHTML = 'Pause ' + [q] + ' - ' + hour + ':' + min + ':' + sec + ' ' + mil;
     splitList.appendChild(splitListItem2);
   }
 }
@@ -46,31 +47,31 @@ function reset() {
 }
 
 function split() {
-  if (spl == 1){
+  if (spl == 1) {
     var splitListItem = document.createElement('p');
     q++;
     splitListItem.classList.add('split__list__item');
-    splitListItem.innerHTML = 'Split ' + [q] + ' - ' + hour + ':' + min + ':' + sec + ' ' + ' ' + mil;
+    splitListItem.innerHTML = 'Split ' + [q] + ' - ' + hour + ':' + min + ':' + sec + ' ' + mil;
     splitList.appendChild(splitListItem);
-  } 
+  }
 }
 
 function timer() {
-  if (run == 1){
+  if (run == 1) {
     setTimeout(function () {
       time += 4;
-      this.mil = time % 999;
-      this.sec = Math.floor(time / 999 % 60);
-      this.min = Math.floor(time / 999 / 60);
-      this.hour = Math.floor(time / 999 / 60 / 60);
+      this.mil = time % 1000;
+      this.sec = Math.floor(time / 1000 % 60);
+      this.min = Math.floor(time / 1000 / 60);
+      this.hour = Math.floor(time / 1000 / 60 / 60);
 
-      if(hour < 10){
+      if (hour < 10) {
         hour = '0' + hour;
       }
-      if(min < 10){
+      if (min < 10) {
         min = '0' + min;
       }
-      if(sec < 10){
+      if (sec < 10) {
         sec = '0' + sec;
       }
       document.querySelector('.timer__text').innerHTML = hour + ':' + min + ':' + sec;
@@ -79,7 +80,3 @@ function timer() {
     }, 1);
   }
 }
-
-
-
-

@@ -3,16 +3,19 @@ body {
   background-color: #0b0707;
   color: #87809d;
 }
+
 .header__h1 {
   text-align: center;
   font-size: 100px;
 }
+
 aside {
   margin-left: 1%;
   float: left;
   width: 30%;
 }
-.start{
+
+.start {
   margin-top: 20px;
   border-radius: 10%;
   background-color: #2e1602;
@@ -26,16 +29,16 @@ aside {
   cursor: pointer;
 }
 
-.start__text{
+.start__text {
   font-size: 50px;
 }
 
-content{
+content {
   margin-right: 1%;
   float: right;
 }
 
-.reset{
+.reset {
   margin-top: 20px;
   border-radius: 10%;
   background-color: #2e1602;
@@ -43,30 +46,35 @@ content{
   width: 185px;
   height: 60px;
 }
+
 .reset:hover {
   box-shadow: 0px 0px 3px 1px white;
   cursor: pointer;
 }
-.reset__text{
+
+.reset__text {
   font-size: 50px;
 }
-.timer{
+
+.timer {
   text-align: center;
   margin-top: 100px;
 }
-.timer__text{
+
+.timer__text {
   font-size: 90px;
 }
 
-.milisecond{
+.milisecond {
   margin-left: 260px;
   text-align: center;
 }
-.milisecond__text{
+
+.milisecond__text {
   font-size: 40px;
 }
 
-.split{
+.split {
   margin-left: 1%;
   margin-top: 20px;
   border-radius: 10%;
@@ -76,11 +84,11 @@ content{
   height: 60px;
 }
 
-.split__text{
+.split__text {
   font-size: 50px;
 }
 
-.split:hover{
+.split:hover {
   box-shadow: 0px 0px 3px 1px white;
   cursor: pointer;
 }
@@ -89,11 +97,12 @@ content{
   margin: 15px 0px 0px 15px;
 }
 
-.split__list__item{
+.split__list__item {
   margin-bottom: 5px;
   font-size: 20px;
 }
-.split__list__item2{
+
+.split__list__item2 {
   margin-bottom: 5px;
   font-size: 20px;
 }
