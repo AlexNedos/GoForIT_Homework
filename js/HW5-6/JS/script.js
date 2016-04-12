@@ -21,7 +21,7 @@ function startPause() {
   if (run == 0) {
     spl = 1;
     run = 1;
-    timer();
+    increment();
     document.querySelector('.start__text').innerHTML = 'Pause';
   } else {
     run = 0;
@@ -56,14 +56,15 @@ function split() {
   }
 }
 
-function timer() {
+function increment() {
   if (run == 1) {
     setTimeout(function () {
       time += 4;
-      this.mil = time % 1000;
-      this.sec = Math.floor(time / 1000 % 60);
-      this.min = Math.floor(time / 60000 % 60);
-      this.hour = Math.floor(time / 86400000 % 24);
+      
+      mil = time % 1000;
+      sec = Math.floor(time / 1000 % 60);
+      min = Math.floor(time / 60000 % 60);
+      hour = Math.floor(time / 86400000 % 24);
 
       if (hour < 10) {
         hour = '0' + hour;
@@ -76,7 +77,7 @@ function timer() {
       }
       document.querySelector('.timer__text').innerHTML = hour + ':' + min + ':' + sec;
       document.querySelector('.milisecond__text').innerHTML = mil;
-      timer();
+      increment();
     }, 1);
   }
 }
