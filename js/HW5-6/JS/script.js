@@ -62,8 +62,8 @@ function timer() {
       time += 4;
       this.mil = time % 1000;
       this.sec = Math.floor(time / 1000 % 60);
-      this.min = Math.floor(time / 1000 / 60);
-      this.hour = Math.floor(time / 1000 / 60 / 60);
+      this.min = Math.floor(time / 60000 % 60);
+      this.hour = Math.floor(time / 86400000 % 24);
 
       if (hour < 10) {
         hour = '0' + hour;
