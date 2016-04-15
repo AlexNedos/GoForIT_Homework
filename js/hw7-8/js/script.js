@@ -1,4 +1,5 @@
 $(function () {
+  
   var $tabs1 = $('.item--1');
   var $tabs2 = $('.item--2');
   var $tabs3 = $('.item--3');
