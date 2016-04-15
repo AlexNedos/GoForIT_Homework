@@ -74,7 +74,7 @@ function increment() {
       }
       if (sec < 10) {
         sec = '0' + sec;
-      }
+        
       document.querySelector('.timer__text').innerHTML = hour + ':' + min + ':' + sec;
       document.querySelector('.milisecond__text').innerHTML = mil;
       increment();
