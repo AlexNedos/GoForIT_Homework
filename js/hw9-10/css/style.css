@@ -1,8 +1,12 @@
-body{
-  background-color: #eaeaea;
+body {
+  /*  background-color: #eaeaea;*/
+  background-color: #141414;
+  height: 1400px;
 }
 
+
 /*---------------CARUSEl-----------------*/
+
 .jcarousel-wrapper {
   margin: 20px auto;
   position: relative;
@@ -12,6 +16,7 @@ body{
   border-radius: 5px;
   box-shadow: 0 0 2px #999;
 }
+
 
 /** Carousel **/
 
@@ -31,6 +36,7 @@ body{
 .jcarousel li {
   float: left;
 }
+
 
 /** Carousel Controls **/
 
@@ -64,11 +70,18 @@ body{
 }
 
 
-
-
-
 /*---------------SELECT-----------------*/
-.sbHolder{
+
+.h1-select {
+  font-size: 30px;
+  color: #7e7e7e;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 30px 0px 10px 0px
+}
+
+.sbHolder {
   background-color: #2d2d2d;
   border: solid 1px #515151;
   font-family: Arial, sans-serif;
@@ -82,7 +95,7 @@ body{
   margin: 0 auto;
 }
 
-.sbSelector{
+.sbSelector {
   display: block;
   height: 30px;
   left: 0;
@@ -94,12 +107,16 @@ body{
   top: 0;
   width: 220px;
 }
-.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+
+.sbSelector:link,
+.sbSelector:visited,
+.sbSelector:hover {
   color: #EBB52D;
   outline: none;
   text-decoration: none;
 }
-.sbToggle{
+
+.sbToggle {
   background: url(../img/select-icons.png) 0 -116px no-repeat;
   display: block;
   height: 30px;
@@ -109,17 +126,20 @@ body{
   top: 0;
   width: 30px;
 }
-.sbToggle:hover{
+
+.sbToggle:hover {
   background: url(../img/select-icons.png) 0 -167px no-repeat;
 }
-.sbToggleOpen{
+
+.sbToggleOpen {
   background: url(../img/select-icons.png) 0 -16px no-repeat;
 }
-.sbToggleOpen:hover{
+
+.sbToggleOpen:hover {
   background: url(../img/select-icons.png) 0 -66px no-repeat;
 }
 
-.sbOptions{
+.sbOptions {
   border-radius: 5px;
   background-color: #212121;
   border: solid 1px #515151;
@@ -133,41 +153,190 @@ body{
   z-index: 1;
   overflow-y: auto;
 }
-.sbOptions li{
+
+.sbOptions li {
   padding: 0 7px;
 }
-.sbOptions a{
-  border-bottom: dotted 1px #515151;
+
+.sbOptions a {
+  border-bottom: solid 1px #2e2e2e;
   display: block;
   outline: none;
   padding: 7px 0 7px 3px;
 }
-.sbOptions a:link, .sbOptions a:visited{
+
+.sbOptions a:link,
+.sbOptions a:visited {
   color: #ddd;
   text-decoration: none;
 }
+
 .sbOptions a:hover,
 .sbOptions a:focus,
-.sbOptions a.sbFocus{
+.sbOptions a.sbFocus {
   color: #EBB52D;
 }
 
 
-
-
 /*---------------CHECKBOX----------------*/
 
+.h1-chec {
+  font-size: 30px;
+  color: #7e7e7e;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 30px 0px -15px 20px;
+}
+
+.jq-checkboxes {
+  margin-left: 40px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.jq-label-checkbox {
+  cursor: pointer;
+  position: relative;
+  top: -10px;
+  color: #7e7e7e;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+}
+
+.jq-checkbox {
+  display: inline-block;
+  background: url('../img/checs.png') 0 0px no-repeat;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+  margin-left: 10px;
+}
+
+.jq-checkbox input {
+  display: none;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+.chec2 {
+  color: #7e7e7e;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.chec2:after {
+  content: " ";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/checs.png);
+  position: relative;
+  top: 3px;
+  margin-left: 32px;
+}
+
+input[type=checkbox]:checked + label:after {
+  background-position: 0 -32px;
+}
+
+.chec2:hover:after {
+  background-position: 0 -62px;
+}
+
+input[type=checkbox]:checked + .chec2:hover:after {
+  background-position: 0 -94px;
+}
 
 
+/*-----------------MENU---------------*/
 
+nav {
+  font-family: Helvetica, sans-serif;
+  margin-top: 30px;
+  background-color: rgb(41, 25, 25);
+  padding: 5px 0px;
+  text-align: center;
+}
 
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
 
+nav li ul {
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgb(41, 25, 25);
+  position: absolute;
+  left: -50px;
+  top: 40px;
+  width: 200px;
+}
 
+nav li li {
+  position: relative;
+  margin: 0;
+  display: block;
+}
 
+nav li li ul {
+  position: absolute;
+  top: 0;
+  left: 202px;
+  margin: 0;
+}
 
+nav a {
+  line-height: 40px;
+  padding: 0 12px;
+  margin: 0 12px;
+  color: #b7aeae;
+  text-decoration: none;
+  display: block;
+}
 
+nav a:hover,
+nav a:focus,
+nav a:active {
+  color: rgb(255, 255, 255);
+}
 
+nav li li a {
+  border-bottom: solid 1px rgb(173, 151, 151);
+  margin: 0 10px;
+  padding: 0;
+}
 
+nav li li:last-child a {
+  border-bottom: none;
+}
 
+ul.submenu {
+  display: none;
+}
 
+nav li.dropdown > a {
+  background-image: url('../img/arrow-down.png');
+  background-position: right 17px;
+  background-repeat: no-repeat;
+}
+
+nav li li.dropdown > a {
+  background-image: url('../img/arrow-right.png');
+  background-position: right 16px;
+  background-repeat: no-repeat;
+}
