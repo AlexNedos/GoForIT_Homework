@@ -87,6 +87,13 @@ $(function () {
     $h1Select.css({
       color: '#2a2a2a'
     });
+    $bC1.css({
+      backgroundPosition: '2px -53px'
+    });
+    $bC2.css({
+      backgroundPosition: '-53px 3px'
+    });
+ 
   });
   $bC2.mousedown(function () {
     $body.css({
@@ -100,6 +107,12 @@ $(function () {
     });
     $h1Select.css({
       color: '#7e7e7e'
+    });
+    $bC1.css({
+      backgroundPosition: '2px 3px'
+    });
+    $bC2.css({
+      backgroundPosition: '-53px -53px'
     });
   });
 });

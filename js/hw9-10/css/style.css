@@ -8,11 +8,11 @@ body {
   left: 10px;
   border-radius: 17px;
   width: 57px;
-  height: 57px;
+  height: 58px;
   cursor: pointer;
   position: relative;
   display: inline-block;
-  background: url(../img/1.png) 0px 2px no-repeat;
+  background: url(../img/11.png) 2px 3px no-repeat;
 }
 
 .button__color2 {
@@ -24,7 +24,7 @@ body {
   cursor: pointer;
   position: relative;
   display: inline-block;
-  background: url(../img/1.png) -55px 2px no-repeat;
+  background: url(../img/11.png) -53px -53px no-repeat;
 }
 
 .button__color__text {
