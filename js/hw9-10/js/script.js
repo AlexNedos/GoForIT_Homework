@@ -22,7 +22,7 @@
 //-----------------MENU---------------
 
 $(function () {
-  $('.dropdown').hover(
+  $('.menu__list__dropdown').hover(
     function () {
       $(this).children('.submenu').slideDown(200);
     },
