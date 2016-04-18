@@ -65,6 +65,44 @@ function changeCheckStart(el) {
   return true;
 }
 
+//-------------BUTTON COLOR SITE-----------
+$(function () {
+  var $bC1 = $('.button__color');
+  var $bC2 = $('.button__color2');
+  var $bCT = $('.button__color__text');
+  var $h1Chec = $('.h1-chec');
+  var $h1Select = $('.h1-select');
+  var $body = $('body');
+
+  $bC1.mousedown(function () {
+    $body.css({
+      background: '#eaeaea'
+    });
+    $bCT.css({
+      color: 'black'
+    });
+    $h1Chec.css({
+      color: '#2a2a2a'
+    });
+    $h1Select.css({
+      color: '#2a2a2a'
+    });
+  });
+  $bC2.mousedown(function () {
+    $body.css({
+      background: '#141414'
+    });
+    $bCT.css({
+      color: 'aliceblue'
+    });
+    $h1Chec.css({
+      color: '#7e7e7e'
+    });
+    $h1Select.css({
+      color: '#7e7e7e'
+    });
+  });
+});
 
 //------------SELECTED-------------
 $(function () {

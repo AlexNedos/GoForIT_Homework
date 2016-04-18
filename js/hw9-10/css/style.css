@@ -1,7 +1,38 @@
 body {
-  /*  background-color: #eaeaea;*/
-  background-color: #141414;
+  background: #141414;
   height: 1400px;
+}
+
+.button__color {
+  top: 10px;
+  left: 10px;
+  border-radius: 17px;
+  width: 57px;
+  height: 57px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: url(../img/1.png) 0px 2px no-repeat;
+}
+
+.button__color2 {
+  top: 10px;
+  left: 10px;
+  border-radius: 17px;
+  width: 57px;
+  height: 57px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: url(../img/1.png) -55px 2px no-repeat;
+}
+
+.button__color__text {
+  top: -12px;
+  left: 16px;
+  position: relative;
+  color: aliceblue;
+  font-family: Helvetica, sans-serif;
 }
 
 
