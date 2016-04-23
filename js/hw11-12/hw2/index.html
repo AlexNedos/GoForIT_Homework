@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HW11-12(2)</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <script type="text/htmll" id="cv">
+  <div class="list">
+    <div class="name"><%= name %></div>
+    <img src="img/photo.jpg" alt="">
+    <div><%= lidn %></div>
+    <hr>
+    <br>
+    <div><%= whyJob %></div>
+    <ul>
+      <li><%= why1 %></li>
+      <li><%= why2 %></li>
+      <li><%= why3 %></li>
+    </ul>
+    <hr>
+    <div class="phone_text">Мой контактный телефон</div>
+    <div class="phone"><%= phone %></div>
+    <div class="profile">Мой профиль вконтакте</div>
+    <div class="link"><a href=""><%= soc %></a></div>
+    <hr>
+    <br>
+    <div>Мой фидбек:</div>
+    <div class="feedback"><%= fid %></div>
+  </script>
+
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/tmpl.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
