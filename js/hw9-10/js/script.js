@@ -34,11 +34,13 @@ $(function () {
 
 //------------CHECKBOX-------------
 
-$('.jq-checkbox').mousedown(function () {
+var $checkbox = $('.jq-checkbox');
+
+$checkbox.mousedown(function () {
   changeCheck($(this));
 });
 
-$('.jq-checkbox').each(function () {
+$checkbox.each(function () {
   changeCheckStart($(this));
 });
 
