@@ -1,83 +1,75 @@
 body{
+  width: 100%;
   font-family: sans-serif;
-  background-color: gray;
+  background-color: #c9c9c9;
 }
 
 .wrapper{
   margin: 0 auto;
-  border-radius: 30px;
-  color: #13132e;
-  width: 600px;
-  height: 560px;
+  border-radius: 10px;
+  width: 90%;
+  height: 640px;
   margin-top: 1%;
   padding-top: 25px;
-  padding-bottom: 90px;
-  padding-left: 150px;
-  padding-right: 150px;
-  background: rgb(100,100,100) radial-gradient(circle at 0 0, rgba(255,255,255,.65), rgba(255,255,255,.35));
-  box-shadow:
-    inset rgba(0,0,0,.5) -3px -3px 8px,
-    inset rgba(255,255,255,.9) 3px 3px 8px,
-    rgba(0,0,0,.8) 3px 3px 8px -3px;
+  background: #564760;
+
 }
 
 .header__h1{
   text-align: center;
-  padding-bottom: 70px;
-  color: #1a1a38;
   font-weight: bold;
-  color: #0f0f36;
-  text-shadow: 1px 1px #8e8e8e;
+  color: #f4f4f4;
+  text-shadow: 1px 1px #000000;
   font-size: 25px;
 }
 
-/*
-
-.question__name{
-  color: #1a1a38;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-*/
-
 .question__h2{
-  color: #1a1a38;
+  color: #f4f4f4;
+  text-shadow: 1px 1px #000000;
   font-weight: bold;
-  margin-bottom: 55px;
-  margin-top: 20px;
+  margin-bottom: 3px;
+  margin-top: 40px;
 }
 
 .answer__text{
-  color: #242453;
+  float: left;
+  display: block;
+  color: #c9c9c9;
+  transition: 5.0s;
+
 }
 
 .answer__text:hover{
-  color: #1414e5;
+  color: #ffffff;
+  transition: 0.5s;
 }
 
 form{
-  margin-left: 420px;
-  position: relative;
-  left: -425px;
-  top: -50px;
+  margin: 0 auto;
+  width: 111px;
 }
 
 .form__question__input{
   margin-top: 10px;
 }
-
-.buttom__result{
-  box-shadow: 2px 2px 2px #000000;
+label{
+  display: inline-block;
+}
+.button__result{
   font-size: 20px;
-  background-color: #2d2d48;
-  color: #e5e5e5;
+  background-color: rgb(91, 67, 106);
+  color: rgba(255, 255, 255, 0.50);
   position: relative;
-  top: -33px;
-  left: 160px;
-  border-radius: 15px;
-  padding: 15px;
+  top: 515px;
+  left: -35px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 200px;
+  transition: 0.5s;
 }
 
-.buttom__result:hover{
-  background-color: #1f1f31;
+
+.button__result:hover{
+  color: #ffffff;
+  transition: 0.5s;
 }

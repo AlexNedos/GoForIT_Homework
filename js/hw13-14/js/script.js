@@ -1,134 +1,76 @@
-'use strict;'
-
-var testProgram = {
-
-  questions: 
-  [
-    {
-      title: '1.Вопрос №1',
-      answers: [
-        {
-          text: 'Вариант ответа №1',
-          correct: true
-        },
-        {
-          text: 'Вариант ответа №2',
-          correct: false
-        },
-        {
-          text: 'Вариант ответа №3',
-          correct: false
-        }
-      ]
-    },
-    {
-      title: '2.Вопрос №2',
-      answers: [
-        {
-          text: 'Вариант ответа №1',
-          correct: false
-        },
-        {
-          text: 'Вариант ответа №2',
-          correct: false
-        },
-        {
-          text: 'Вариант ответа №3',
-          correct: true
-        }
-      ]
-    },
-    {
-      title: '3.Вопрос №3',
-      answers: [
-        {
-          text: 'Вариант ответа №1',
-          correct: true
-        },
-        {
-          text: 'Вариант ответа №2',
-          correct: false
-        },
-        {
-          text: 'Вариант ответа №3',
-          correct: false
-        }
-      ]
-    }	   
-  ]
-};
-
-localStorage.setItem('questions',  JSON.stringify(testProgram));
+'use strict';
 
 var questionStorage = localStorage.getItem('questions');
 questionStorage = JSON.parse(questionStorage);
 
 var testProgram = {
-    
-  testBody:      document.body,
-  testWrapper:   document.createElement('div'),
-  testHeader:    document.createElement('h1'),
-  testContent:   document.createElement('content'),
-  testButtom:    document.createElement('button'),
+
+  testBody: document.body,
+  testWrapper: document.createElement('div'),
+  testHeader: document.createElement('h1'),
+  testContent: document.createElement('content'),
+  testForm: document.createElement('form'),
+  testButton: document.createElement('button'),
+
 
   createdTest: function () {
-    this.testWrapper.   classList.add('wrapper');
+    this.testWrapper.classList.add('wrapper');
 
-    this.testHeader.    classList.add('header__h1');
-    this.testHeader.    innerHTML = 'Тест по программированию';
+    this.testHeader.classList.add('header__h1');
+    this.testHeader.innerHTML = 'Тест по программированию';
 
-    this.testButtom.    classList.add('buttom__result');
-    this.testButtom.    setAttribute('type', 'submit');
-    this.testButtom.    innerHTML = 'Отправить мои результаты';
+    this.testButton.classList.add('button__result');
+    this.testButton.setAttribute('type', 'submit');
+    this.testButton.innerHTML = 'Отправить мои результаты';
 
-    this.testBody.      appendChild(this.testWrapper);
-    this.testWrapper.   appendChild(this.testHeader);
-    this.testWrapper.   appendChild(this.testContent); 
-    this.testWrapper.   appendChild(this.testButtom); 
+    this.testBody.appendChild(this.testWrapper);
+    this.testWrapper.appendChild(this.testHeader);
+    this.testWrapper.appendChild(this.testContent);
+    this.testContent.appendChild(this.testForm);
+    this.testForm.appendChild(this.testButton);
   },
 
   generateElement: function () {
+    var q = 0;
 
-    var q = 1;
+    for (var i = 0; i < questionStorage.questions.length; i++) {
 
-    for(var i = 0; i < questionStorage.questions.length; i++) {
+      var testBoxQuestion = document.createElement('div');
+      var testQuestionH2 = document.createElement('h2');
 
-      var testBoxQuestion =  document.createElement('div');
-      var testQuestionH2 =   document.createElement('h2');
-      var testForm =         document.createElement('form');
+      testQuestionH2.innerHTML = questionStorage.questions[i].title;
 
-      testQuestionH2.        innerHTML = questionStorage.questions[i].title;
+      testBoxQuestion.classList.add('question__box');
+      testQuestionH2.classList.add('question__h2');
 
-      testBoxQuestion.       classList.add('question__box');
-      testQuestionH2.        classList.add('question__h2');
-      testForm.              setAttribute('action', '#');
-
-      this.testContent.      appendChild(testBoxQuestion);
-      testBoxQuestion.       appendChild(testQuestionH2);
-      testBoxQuestion.       appendChild(testForm);
+      this.testForm.appendChild(testBoxQuestion);
+      testBoxQuestion.appendChild(testQuestionH2);
 
 
-      for(var y = 0; y < questionStorage.questions[i].answers.length; y++) {
+      for (var y = 0; y < questionStorage.questions[i].answers.length; y++) {
 
+        var answerBox = document.createElement('div');
         var formQuestionInput = document.createElement('input');
         var formQuestionLabel = document.createElement('label');
-
-        formQuestionInput.      classList.add('form__question__input');
-        formQuestionInput.      setAttribute('type', 'checkbox');
-        formQuestionInput.      setAttribute('id', 'question' + q);
-        formQuestionLabel.      setAttribute('for', 'question' + q);
+     
+        formQuestionInput.classList.add('form__question__input');
+        formQuestionInput.setAttribute('type', 'radio');
+        formQuestionInput.setAttribute('name', 'answer ' + i);
+        formQuestionInput.setAttribute('id', 'question' + q);
+        formQuestionLabel.setAttribute('for', 'question' + q);
 
         var formQuestionAnswer = document.createElement('span');
-        formQuestionAnswer.     classList.add('answer__text');
-        formQuestionAnswer.     innerHTML = questionStorage.questions[i].answers[y].text;
+        formQuestionAnswer.classList.add('answer__text');
+        formQuestionAnswer.innerHTML = questionStorage.questions[i].answers[y].text;
 
-        testForm.               appendChild(formQuestionInput);
-        testForm.               appendChild(formQuestionLabel);
-        formQuestionLabel.      appendChild(formQuestionAnswer);
+        testBoxQuestion.appendChild(answerBox);
+        answerBox.appendChild(formQuestionInput);
+        answerBox.appendChild(formQuestionLabel);
+        formQuestionLabel.appendChild(formQuestionAnswer);
 
-        q++;    
+        q++;
       }
-    }  
+    }
   }
 };
 
@@ -137,19 +79,31 @@ testProgram.generateElement();
 
 
 
+$(function () {
+  var $result = $('.button__result');
+  
+  $result.on('click', function () {
+    
+    for ( var i = 0; i < 9; i++) {
+      if ($('#question' + i).prop("checked")){
+      alert('Верно');
+    } else {
+    alert('Не верно');
+      }
+//    if ($('#question4').prop("checked")){
+//      alert('Верно');
+//    } else {
+//      alert('Не верно');
+//      }
+//    if ($('#question8').prop("checked")){
+//      alert('Верно');
+//    } else {
+//      alert('Не верно');
+//      }
+    }
+    
+  });
+  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+});

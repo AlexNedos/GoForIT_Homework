@@ -1,19 +1,22 @@
-'use strict;'
+'use strict';
+
 var testProgram = {
 
-  questions: 
-  [
+  questions: [
     {
       title: '1.Вопрос №1',
       answers: [
         {
-          text: 'Вариант ответа №1'
+          text: 'Верно',
+          correct: true
         },
         {
-          text: 'Вариант ответа №2'
+          text: 'Не верно',
+          correct: false
         },
         {
-          text: 'Вариант ответа №3'
+          text: 'Не верно',
+          correct: false
         }
       ]
     },
@@ -21,13 +24,16 @@ var testProgram = {
       title: '2.Вопрос №2',
       answers: [
         {
-          text: 'Вариант ответа №1'
+          text: 'Не верно',
+          correct: false
         },
         {
-          text: 'Вариант ответа №2'
+          text: 'Не верно',
+          correct: false
         },
         {
-          text: 'Вариант ответа №3'
+          text: 'Верно',
+          correct: true
         }
       ]
     },
@@ -35,21 +41,20 @@ var testProgram = {
       title: '3.Вопрос №3',
       answers: [
         {
-          text: 'Вариант ответа №1'
+          text: 'Верно',
+          correct: true
         },
         {
-          text: 'Вариант ответа №2'
+          text: 'Не верно',
+          correct: false
         },
         {
-          text: 'Вариант ответа №3'
+          text: 'Не верно',
+          correct: false
         }
       ]
-    }	   
+    }
   ]
 };
 
-  localStorage.setItem('questions',  JSON.stringify(testProgram));
-
-var question = localStorage.getItem('questions');
-question = JSON.parse(question);
-console.log(question);
+localStorage.setItem('questions', JSON.stringify(testProgram));
