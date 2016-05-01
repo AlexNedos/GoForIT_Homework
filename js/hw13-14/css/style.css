@@ -1,52 +1,73 @@
 body{
   width: 100%;
   font-family: sans-serif;
-  background-color: #c9c9c9;
+  background: #c9c9c9;
 }
-
+::selection{
+  background-color: rgba(131, 131, 131, 0.37);
+}
 .wrapper{
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 1px;
   width: 90%;
   height: 640px;
   margin-top: 1%;
   padding-top: 25px;
-  background: #564760;
-
+  background: #ffffff;
+  box-shadow: 0px 0px 100px 0px #7b7b7b;
 }
 
 .header__h1{
+  background-color: #00897B;
   text-align: center;
-  font-weight: bold;
-  color: #f4f4f4;
-  text-shadow: 1px 1px #000000;
-  font-size: 25px;
+  color: #fcfcfc;
+  font-size: 32px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: -26px;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+  
 }
 
 .question__h2{
-  color: #f4f4f4;
-  text-shadow: 1px 1px #000000;
+  position: relative;
+  left: -100px;
+  padding-left: 100px;
+  display: block;
+  padding-bottom: 8px;
+  padding-top: 5px;
+  border-top: 1px solid #d0d0d0;
+  width: 1012px;
+  font-size: 21px;
+  color: #00897B;
   font-weight: bold;
   margin-bottom: 3px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .answer__text{
-  float: left;
+  margin-top: 7px;
+  font-size: 19px;
+/*  float: left;*/
   display: block;
-  color: #c9c9c9;
-  transition: 5.0s;
+  color: #575757;
+  transition: 0.5s;
+  left: 0px;
+  position: relative;
+  
 
 }
 
 .answer__text:hover{
-  color: #ffffff;
-  transition: 0.5s;
+  left: 10px;
+  color: #212121;
+  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 form{
-  margin: 0 auto;
-  width: 111px;
+  margin: -10px 100px;
+  width: 630px;
 }
 
 .form__question__input{
@@ -56,20 +77,61 @@ label{
   display: inline-block;
 }
 .button__result{
-  font-size: 20px;
-  background-color: rgb(91, 67, 106);
-  color: rgba(255, 255, 255, 0.50);
+  font-size: 15px;
+  background-color: #00897B;
+  top: 550px;
+  left: 350px;
+  margin: 0 auto;
   position: relative;
-  top: 515px;
-  left: -35px;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 5px;
-  width: 200px;
-  transition: 0.5s;
+  width: 215px;
+  transition: 0.7s;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 
 .button__result:hover{
-  color: #ffffff;
-  transition: 0.5s;
+  background: #F4511E;
+  transition: 0.2s;
+}
+
+
+
+.fancybox-modal p {
+  color: white;
+  background: #00897B;
+  padding: 10px 0px 10px 0px;
+  margin-top: -10px;
+  width: 500px;
+  position: inherit;
+  left: -10px;
+}
+
+.fancybox-modal{
+  background: white;
+  position: absolute;
+  width: 480px;
+  height: 360px;
+  top: 50%;
+  left: 50%;
+  margin: -180px 0 0 -240px;
+  text-align: center;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 1px;
+  box-shadow:  0px 0px 150px 0px #767676;
+
+}
+
+
+
+.modal-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
 }

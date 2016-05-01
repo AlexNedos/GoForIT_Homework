@@ -31,6 +31,7 @@ var testProgram = {
   },
 
   generateElement: function () {
+
     var q = 0;
 
     for (var i = 0; i < questionStorage.questions.length; i++) {
@@ -40,7 +41,7 @@ var testProgram = {
 
       testQuestionH2.innerHTML = questionStorage.questions[i].title;
 
-      testBoxQuestion.classList.add('question__box');
+      testBoxQuestion.classList.add('question__box' + i);
       testQuestionH2.classList.add('question__h2');
 
       this.testForm.appendChild(testBoxQuestion);
@@ -67,7 +68,11 @@ var testProgram = {
         answerBox.appendChild(formQuestionInput);
         answerBox.appendChild(formQuestionLabel);
         formQuestionLabel.appendChild(formQuestionAnswer);
-
+        
+        if ( (questionStorage.questions[i].answers[y].correct) == true ){
+          formQuestionInput.classList.add('correct');
+        }
+        
         q++;
       }
     }
@@ -79,31 +84,76 @@ testProgram.generateElement();
 
 
 
-$(function () {
-  var $result = $('.button__result');
-  
-  $result.on('click', function () {
-    
-    for ( var i = 0; i < 9; i++) {
-      if ($('#question' + i).prop("checked")){
-      alert('Верно');
-    } else {
-    alert('Не верно');
-      }
-//    if ($('#question4').prop("checked")){
-//      alert('Верно');
-//    } else {
-//      alert('Не верно');
-//      }
-//    if ($('#question8').prop("checked")){
-//      alert('Верно');
-//    } else {
-//      alert('Не верно');
-//      }
-    }
-    
-  });
-  
 
+
+
+
+
+
+
+
+$(function () {
   
+  
+  var $result = $('.button__result');   
+
+                             
+  $result.on('click', function () {
+    var que = 1;
+    var $checkedInput = $('input:checked');
+    var $correct = $('.correct');
+    
+    
+    var rightAnsws = ["input_1_3", "input_2_3", "input_3_3"];
+    var checkedIDs = $(':checked').map(function(){return this.id;});
+    
+    if(
+      checkedIDs.length !== rightAnsws.length ||
+      $(':checked', 'div.question_box1').length > 0 ||
+
+      $(':checked', 'div.question_box2').length > 0 ||
+
+      $(':checked', 'div.question_box3').length > 0
+    )
+    {
+      alert('Ошибка. Пожалуйста, убедитесь, что вы ответили на все вопросы.');
+    }else{
+    for ( var i = 0; i < $checkedInput.length; i++) {
+   
+      if ($correct[i] == $checkedInput[i]) {
+        alert('Вопрос № ' + que + ' Верно!');
+      } else {
+        alert('Вопрос № ' + que + ' Не верно!');
+      }
+      que++;
+    }
+  }});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(function () {
+
+  $('.button__result').modal({
+    overlayColor: 'rgba(0, 0, 0, 0.41)',
+    fontSize: '32px'
+  });
+
+});
+
+
+

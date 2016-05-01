@@ -4,52 +4,52 @@ var testProgram = {
 
   questions: [
     {
-      title: '1.Вопрос №1',
+      title: 'Какое существует соглашение о названии переменных jQuery объектов?',
       answers: [
         {
-          text: 'Верно',
+          text: 'Переменные следует создавать с приставкой $',
           correct: true
         },
         {
-          text: 'Не верно',
+          text: 'Camel case, с большой буквы',
           correct: false
         },
         {
-          text: 'Не верно',
+          text: 'С маленькой буквы, разделитель слов - нижнее подчеркивание',
           correct: false
         }
       ]
     },
     {
-      title: '2.Вопрос №2',
+      title: 'Какие символы обозначают начало и конец шаблона?',
       answers: [
         {
-          text: 'Не верно',
+          text: '<...>',
           correct: false
         },
         {
-          text: 'Не верно',
+          text: '{{...}}',
           correct: false
         },
         {
-          text: 'Верно',
+          text: '<%...%>',
           correct: true
         }
       ]
     },
     {
-      title: '3.Вопрос №3',
+      title: 'С помощью какой переменной в обработчике событий клавиатуры можно увидеть, какая именно клавиша была нажата?',
       answers: [
         {
-          text: 'Верно',
+          text: 'event.keyCode;',
           correct: true
         },
         {
-          text: 'Не верно',
+          text: 'event.pressedButton',
           correct: false
         },
         {
-          text: 'Не верно',
+          text: 'keyCode',
           correct: false
         }
       ]
