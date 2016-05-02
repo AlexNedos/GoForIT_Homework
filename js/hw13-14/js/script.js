@@ -109,7 +109,7 @@ testProgram.generateElement();
 
 
 
-var a = 0;
+var aQ = 0;
 
 $(function () {
 
@@ -139,7 +139,7 @@ $(function () {
     ) {
       $modalText.html('Ошибка... Убедитесь, что вы ответили на все вопросы.');
       $modal.css({
-        display: 'block'
+        margin: '-180px 0 0 -240px'
       });
       $overlay.css({
         display: 'block'
@@ -147,7 +147,7 @@ $(function () {
 
       $overlay.one('click', function () {
         $modal.css({
-          display: 'none'
+          margin: '-10000px 0 0 -240px'
         });
         $overlay.css({
           display: 'none'
@@ -159,12 +159,12 @@ $(function () {
       for (var i = 0; i < $checkedInput.length; i++) {
 
         if ($correct[i] == $checkedInput[i]) {
-          a++;
+          aQ++;
         }
       }
-      $modalText.html('Колличество верных ответов - ' + a);
+      $modalText.html('Колличество верных ответов - ' + aQ);
       $modal.css({
-        display: 'block'
+        margin: '-180px 0 0 -240px'
       });
       $overlay.css({
         display: 'block'
