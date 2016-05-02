@@ -11,11 +11,23 @@ var testProgram = {
   testContent: document.createElement('content'),
   testForm: document.createElement('form'),
   testButton: document.createElement('button'),
+  //  modal
+  testModal: document.createElement('div'),
+  testOverlay: document.createElement('div'),
+  testModalText: document.createElement('div'),
+  testModalTextHeader: document.createElement('p'),
 
 
   createdTest: function () {
     this.testWrapper.classList.add('wrapper');
 
+    //  modal
+    this.testModal.classList.add('modal');
+    this.testOverlay.classList.add('overlay');
+    this.testModalText.classList.add('modal-text');
+    this.testModalTextHeader.innerHTML = 'Результат';
+    //    this.testModalText.innerHTML = 'Количество верных ответов -';
+    //  modal
     this.testHeader.classList.add('header__h1');
     this.testHeader.innerHTML = 'Тест по программированию';
 
@@ -23,11 +35,18 @@ var testProgram = {
     this.testButton.setAttribute('type', 'submit');
     this.testButton.innerHTML = 'Отправить мои результаты';
 
+
+
     this.testBody.appendChild(this.testWrapper);
     this.testWrapper.appendChild(this.testHeader);
     this.testWrapper.appendChild(this.testContent);
     this.testContent.appendChild(this.testForm);
     this.testForm.appendChild(this.testButton);
+    this.testBody.appendChild(this.testOverlay);
+    this.testBody.appendChild(this.testModal);
+    this.testModal.appendChild(this.testModalText);
+    this.testModal.appendChild(this.testModalTextHeader);
+
   },
 
   generateElement: function () {
@@ -53,7 +72,7 @@ var testProgram = {
         var answerBox = document.createElement('div');
         var formQuestionInput = document.createElement('input');
         var formQuestionLabel = document.createElement('label');
-     
+
         formQuestionInput.classList.add('form__question__input');
         formQuestionInput.setAttribute('type', 'radio');
         formQuestionInput.setAttribute('name', 'answer ' + i);
@@ -68,11 +87,11 @@ var testProgram = {
         answerBox.appendChild(formQuestionInput);
         answerBox.appendChild(formQuestionLabel);
         formQuestionLabel.appendChild(formQuestionAnswer);
-        
-        if ( (questionStorage.questions[i].answers[y].correct) == true ){
+
+        if ((questionStorage.questions[i].answers[y].correct) == true) {
           formQuestionInput.classList.add('correct');
         }
-        
+
         q++;
       }
     }
@@ -90,70 +109,76 @@ testProgram.generateElement();
 
 
 
-
+var a = 0;
 
 $(function () {
-  
-  
-  var $result = $('.button__result');   
 
-                             
-  $result.on('click', function () {
-    var que = 1;
+  var $result = $('.button__result');
+
+  $result.on('click', function (e) {
+    e.preventDefault();
+    var $modal = $('.modal');
+    var $modalText = $('.modal-text');
+    var $overlay = $('.overlay');
     var $checkedInput = $('input:checked');
     var $correct = $('.correct');
-    
-    
+
+
     var rightAnsws = ["input_1_3", "input_2_3", "input_3_3"];
-    var checkedIDs = $(':checked').map(function(){return this.id;});
-    
-    if(
+    var checkedIDs = $(':checked').map(function () {
+      return this.id;
+    });
+
+    if (
       checkedIDs.length !== rightAnsws.length ||
       $(':checked', 'div.question_box1').length > 0 ||
 
       $(':checked', 'div.question_box2').length > 0 ||
 
       $(':checked', 'div.question_box3').length > 0
-    )
-    {
-      alert('Ошибка. Пожалуйста, убедитесь, что вы ответили на все вопросы.');
-    }else{
-    for ( var i = 0; i < $checkedInput.length; i++) {
-   
-      if ($correct[i] == $checkedInput[i]) {
-        alert('Вопрос № ' + que + ' Верно!');
-      } else {
-        alert('Вопрос № ' + que + ' Не верно!');
+    ) {
+      $modalText.html('Ошибка... Убедитесь, что вы ответили на все вопросы.');
+      $modal.css({
+        display: 'block'
+      });
+      $overlay.css({
+        display: 'block'
+      });
+
+      $overlay.one('click', function () {
+        $modal.css({
+          display: 'none'
+        });
+        $overlay.css({
+          display: 'none'
+        });
+      });
+
+
+    } else {
+      for (var i = 0; i < $checkedInput.length; i++) {
+
+        if ($correct[i] == $checkedInput[i]) {
+          a++;
+        }
       }
-      que++;
+      $modalText.html('Колличество верных ответов - ' + a);
+      $modal.css({
+        display: 'block'
+      });
+      $overlay.css({
+        display: 'block'
+      });
+
+      $overlay.one('click', function () {
+        $modal.css({
+          display: 'none'
+        });
+        $overlay.css({
+          display: 'none'
+        });
+        location.reload();
+      });
     }
-  }});
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$(function () {
-
-  $('.button__result').modal({
-    overlayColor: 'rgba(0, 0, 0, 0.41)',
-    fontSize: '32px'
   });
-
 });
-
-
-

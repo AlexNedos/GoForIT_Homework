@@ -11,11 +11,14 @@
     var $overlay;
 
     function showModal(e) {
-      $modal = $('<div class="fancybox-modal"><p style="font-size:'+ settings.fontSize +';">Результат</p></div>');
+
+      $modal = $('<div class="fancybox-modal"><p style="font-size:'+ settings.fontSize +';">Результат</p><div class="aaa"></div></div>');
       $overlay = $('<div class="modal-overlay">');
       $overlay.css({
         'background-color': settings.overlayColor
       });
+
+
       e.preventDefault();
 
       $body.append($overlay);
