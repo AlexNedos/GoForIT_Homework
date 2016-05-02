@@ -39,7 +39,7 @@ body {
   padding-top: 5px;
   border-top: 1px solid #d0d0d0;
   width: 100%;
-/*  width: 1062px;*/
+  /*  width: 1062px;*/
   font-size: 21px;
   color: #00897B;
   font-weight: bold;
@@ -79,7 +79,7 @@ label {
   font-size: 15px;
   background-color: #b9b9b9;
   top: 550px;
-/*  left: 350px;*/
+  /*  left: 350px;*/
   margin: 0 auto;
   position: relative;
   border-radius: 3px;

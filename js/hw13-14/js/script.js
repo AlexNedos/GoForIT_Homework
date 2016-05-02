@@ -21,13 +21,10 @@ var testProgram = {
   createdTest: function () {
     this.testWrapper.classList.add('wrapper');
 
-    //  modal
     this.testModal.classList.add('modal');
     this.testOverlay.classList.add('overlay');
     this.testModalText.classList.add('modal-text');
     this.testModalTextHeader.innerHTML = 'Результат';
-    //    this.testModalText.innerHTML = 'Количество верных ответов -';
-    //  modal
     this.testHeader.classList.add('header__h1');
     this.testHeader.innerHTML = 'Тест по программированию';
 
@@ -100,12 +97,6 @@ var testProgram = {
 
 testProgram.createdTest();
 testProgram.generateElement();
-
-
-
-
-
-
 
 
 
