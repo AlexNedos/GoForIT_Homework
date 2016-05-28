@@ -7,23 +7,23 @@ module.exports = function(grunt) {
 					separator: ';'
 				},
 				src: ['js/src/*.js'],
-				dest: 'js/dist/script.main.min.js'
+				dest: 'js/build/script.main.min.js'
 			},
 			css: {
 				src: ['css/src/*.css'],
-				dest: 'css/dist/style.main.min.css'
+				dest: 'css/build/style.main.min.css'
 			}
 		},
 		uglify: {
 			js: {
-				src: ['js/dist/script.main.min.js'],
-				dest: 'js/dist/script.main.min.js'
+				src: ['js/build/script.main.min.js'],
+				dest: 'js/build/script.main.min.js'
 			},
 		},
 		cssmin: {
 			dist:{	
-				src: ['css/dist/style.main.min.css'],
-				dest: 'css/dist/style.main.min.css'
+				src: ['css/build/style.main.min.css'],
+				dest: 'css/build/style.main.min.css'
 			}
 		}
 	});
