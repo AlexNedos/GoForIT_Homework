@@ -23,8 +23,6 @@ $font2: 'Ubuntu Medium', Arial, sans-serif;
 }
 
 header{
-	background: #fff;
-
 	.uppermost{
 		padding: 25px 0px 35px 0px;
 		max-width: 1700px;
@@ -33,7 +31,7 @@ header{
 			background: #fff;
 			display: inline-block;
 			&__img{
-				background: url(../../images/build/logoSprite.png) 0px -41px;
+				background: url(../images/logoSprite.png) 0px -41px;
 				display: inline-block;
 				height: 41px;
 				width: 205px;
@@ -59,7 +57,7 @@ header{
 				display: block;
 				height: 18px;
 				width: 20px;
-				background-image: url(../../images/build/socialsSprite.png);
+				background-image: url(../images/socialsSprite.png);
 				padding: 0px 1px;
 
 				&--fb{
@@ -134,7 +132,7 @@ header{
 		&__srch{
 			height: 40px;
 			width: 33%;
-			background: #35383c url(../../images/search-icon.png) 94% center no-repeat;
+			background: #35383c url(../images/search-icon.png) 94% center no-repeat;
 			border: 1px solid #181a1d;
 			padding: 0px 0px 0px 12px;
 			margin: 8px 10px 0px 0px;
@@ -189,7 +187,7 @@ header{
 		min-height: 20px; 
 		height:auto !important; 
 		height: 20px;  
-		background:url(../../images/build/carsl/loader.gif) center center no-repeat;
+			background:url(../images/carsl/loader.gif) center center no-repeat;
 		margin: 0 auto;
 		}	
 		.carousel .next,
@@ -206,11 +204,11 @@ header{
 		}
 		.carousel .prev { 
 			margin-left:-60px; 
-			background:url(../../images/build/carsl/prev.png) 0 0 no-repeat;  
+			background:url(../images/carsl/prev.png) 0 0 no-repeat;  
 		}
 		.carousel .next { 
 			margin-right:-60px;  
-			background:url(../../images/build/carsl/next.png) 0 0 no-repeat; 
+			background:url(../images/carsl/next.png) 0 0 no-repeat; 
 		}
 		.carousel li{ 
 			display:none; 
@@ -229,17 +227,17 @@ header{
 			width:40px; 
 			height:40px; 
 			float:left; 
-			background:url(../../images/build/carsl/dots.png) 0px -40px no-repeat; 
+			background:url(../images/carsl/dots.png) 0px -40px no-repeat; 
 		}
 		.paging > a:hover,
 		.paging > a.current { 
-			background:url(../../images/build/carsl/dots.png) 0px 0px no-repeat;  
+			background:url(../images/carsl/dots.png) 0px 0px no-repeat;  
 		}
 		.badge { 
 			display:block; 
 			width:104px; 
 			height:104px; 
-			background:url(../../images/build/carsl/badge.png) 0 0 no-repeat; z-index:9000; 
+			background:url(../images/carsl/badge.png) 0 0 no-repeat; z-index:9000; 
 			position:absolute; 
 			top:-3px; 
 			left:-3px; 
@@ -281,7 +279,7 @@ main{
 				display: inline-block;
 				width: 40px;
 		  		height: 40px;
-		  		background-image: url(../../images/build/descrSprite.png);
+				background-image: url(../images/descrSprite.png);
 		  		margin: 10px 0px 2px;
 		  		&--gear{
 					background-position: 0px 0px;
@@ -306,7 +304,7 @@ main{
 			}
 			&__arr{
 				display: inline-block;
-				background: url(../../images/build/arrSprite.png) -12px 0px;
+				background: url(../images/arrSprite.png) -12px 0px;
 				width: 12px;
 	  			height: 11px;
 	  			margin-left: 5px;
@@ -377,16 +375,16 @@ main{
 			height: 260px;
 			background-position: 259px 0px;
 			&--one{
-				background-image: url('../../images/build/servSprite1.png');
+				background-image: url('../images/servSprite1.png');
 			}
 			&--two{
-				background-image: url('../../images/build/servSprite2.png');
+				background-image: url('../images/servSprite2.png');
 			}
 			&--thr{
-				background-image: url('../../images/build/servSprite3.png');
+				background-image: url('../images/servSprite3.png');
 			}
 			&--fou{
-				background-image: url('../../images/build/servSprite4.png');
+				background-image: url('../images/servSprite4.png');
 			}
 		}
 		&__descr{
@@ -506,10 +504,10 @@ main{
 				margin-left: 10px;
 				background-color: #0187f4;
 				&--1{
-					background-image: url(../../images/src/articles/art1.jpg);
+					background-image: url(../images/articles/art1.jpg);
 				}
 				&--2{
-					background-image: url(../../images/src/articles/art2.jpg);
+					background-image: url(../images/articles/art2.jpg);
 				}
 			}
 			&__date{
@@ -587,7 +585,7 @@ main{
 	}
 	&__link{
 		display: block;
-		background-image: url(../../images/build/brandsSprite.png);
+		background-image: url(../images/brandsSprite.png);
 		&:hover{
 			opacity: .5;
 		}
@@ -695,7 +693,7 @@ main{
 		margin: 0px 0px -4px 0px;
 		width: 20px;
 		height: 20px;
-		background-image: url(../../images/build/contacts.png);
+		background-image: url(../images/contacts.png);
 		&--loc{
 			background-position: -4px -7px;
 		}

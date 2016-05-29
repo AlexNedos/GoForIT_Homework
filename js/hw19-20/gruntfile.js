@@ -7,51 +7,42 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				files: {                           
-					'styles/src/style.css': 'styles/src/style.scss'
+					'src/styles/style.css': 'src/styles/style.scss'      // 'destination': 'source'
 				}
 	    }
   	},
 
   	watch: {
     	sass: {
-    		files: ['styles/src/style.scss'],
+			files: ['src/styles/style.scss'],
     		tasks: ['sass']
     	}
     },
-
-    sprite:{
-      all: {
-        src: 'images/src/brands/*.png',
-        dest: 'images/build/brandsSprite.png',
-        destCss: 'styles/build/sprites.css'
-      }
-    },
-    
     concat: {
       js: {
         options: {
           separator: ';'
         },
-        src: ['js/src/libs/*.js', 'js/src/plugins/*.js', 'js/src/*.js'],
-        dest: 'js/build/build.js'
+			src: ['src/js/libs/*.js', 'src/js/plugins/*.js', 'src/js/*.js'],
+        dest: 'build/build.js'
       },
       css: {
-        src: ['styles/src/*.css'],
-        dest: 'styles/build/build.css'
+			src: ['src/styles/*.css'],
+        dest: 'build/build.css'
       }
     },
     //minify js
     uglify: {
       dist: {
-        src: ['js/build/build.js'],
-        dest: 'js/build/build.js'
+        src: ['build/build.js'],
+        dest: 'build/build.js'
       }
     },
     //minify css
     cssmin: {
       dist: {
-        src: 'styles/build/build.css',
-        dest: 'styles/build/build.css'
+        src: 'build/build.css',
+        dest: 'build/build.css'
       }
     }
 
@@ -59,7 +50,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');

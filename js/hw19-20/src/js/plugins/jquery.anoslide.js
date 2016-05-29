@@ -84,29 +84,7 @@
 			{
 				$(this.options.prev).on('click', delegate(this, this.prev));
 			}
-			
-			// if (this.options.autoStop)
-			// {
-			// 	this.element.parent().on(
-			// 	{
-			// 		mouseenter: delegate(this, function(element)
-			// 		{
-			// 			if (this.timeout)
-			// 			{
-			// 				clearTimeout(this.timeout);
-							
-			// 				this.options.auto = 0;
-			// 			}
-			// 		}),
-			// 		mouseleave: delegate(this, function(element)
-			// 		{
-			// 			this.options.auto = this.defaults.auto;
-						
-			// 			this.go(this.current);
-			// 		})
-			// 	})
-			// }
-				
+		
 			this.options.onConstruct.apply(this,[this]);
 			
 			this.adapt().go(0);
