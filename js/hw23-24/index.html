@@ -2,21 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>HW15-16(API_1)</title>
+	<meta charset="UTF-8">
+	<title>lesson 1</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<div class="wrapper">	
-			<div class="picture">
-				<img class="logo" src="img/google.png" alt="Logo">
-			</div>
-		<gcse:searchbox-only></gcse:searchbox-only>
-	</div>
-	<script src="js/jquery-1.12.3.min.js"></script>
-	<script src="js/script.js"></script>
+	<script type="text/html" id="wrapper__template">
+		<div class="wrapper">
+			<ul class="wrapper__item__list"></ul>
+		</div>
+		<div class="wrapper__controlls">
+			<input type="text" class="wrapper__controlls__item__value">
+			<button class="wrapper__controlls__item__add">Add</button>
+		</div>
+	</script>
+	<script type="text/temp" id="list__template">
+		<% for(var i = 0; i < data.length; i++){ %>
+			<li class="list__template__text" contenteditable="true">
+				<%= data[i] %>
+			</li>
+			<span data-value="<%= data[i] %>" class="list__template__item__delete"></span>
+			<% }; %>
+	</script>
+	<script src="js/tmpl.js"></script>
+	<script data-main="js/script.js" src="js/require.js"></script>
 </body>
 
 </html>
