@@ -14,14 +14,12 @@ require(
 		'jquery',
 		'model',
 		'view',
-		'controller',
-		'edit'
+		'controller'
 	],
-	function ($, model, view, controller, edit) {
+	function ($, model, view, controller) {
 		var firstToDoList = ['Learn js', 'Learn html', 'Make coffe'];
 		var model = new model.Model(firstToDoList);
 		var view = new view.View(model);
 		var controller = new controller.Controller(model, view);
-		var edit = new edit.Edit(firstToDoList);
 	}
 );

@@ -14,6 +14,7 @@ define(
 					}
 				});
 				view.elements.listContainer.delegate('.list__template__item__delete', 'click', removeItem);
+				view.elements.input.bind('click', editItem);
 
 				function addItem() {
 					var newItem = view.elements.input.val();
@@ -27,6 +28,17 @@ define(
 					model.removeItem(item);
 					view.renderList(model.data);
 				}
+				function editItem() {
+					for (var i = 0; i < model.data.length; i++) {
+						var arr = $('.list__template__text');
+						if (arr[i].innerHTML === model.data[i]) {
+							return;
+						} else {
+							model.data[i] = arr[i].innerHTML;
+						}
+					}
+				}
+				
 			}
 		};
 	}
