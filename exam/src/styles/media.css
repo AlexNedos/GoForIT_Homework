@@ -1,0 +1,19 @@
+@media only screen and (min-width: 320px) {
+	header {
+		background-color: #971cce;
+
+	}
+}
+@media only screen and (min-width: 768px) {
+	header {
+		background-color: #ce1c1c;
+
+	}
+}
+
+@media only screen and (min-width: 1283px) {
+	header {
+		background-color: #1ccec0;
+
+	}
+}
