@@ -19,6 +19,9 @@
   font-weight: normal;
   font-style: normal;
 }
+html{
+	width: 320px;
+}
 body{
 	width: 320px;
 }
