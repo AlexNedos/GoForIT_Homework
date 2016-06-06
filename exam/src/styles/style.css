@@ -22,8 +22,8 @@
 
 /*HEADER*/
 header {
-  margin: auto;
-  max-width: 320px;
+  margin: 0px;
+  width: 320px;
   background-image: url(../../img/Promo/Header_photo.png);
   height: 540px;
 }
@@ -106,8 +106,8 @@ header {
 /*HEADER*/
 /*ASIDE*/
 aside {
-	margin: auto;
-	max-width: 320px;
+	margin: 0px;
+	width: 320px;
   height: 800px;
 }
 
@@ -232,8 +232,8 @@ aside .aside__box3 .step3 {
 /*ASIDE*/
 /*PERTNERS*/
 .partners {
-	margin: auto;
-	max-width: 320px;
+	margin: 0px;
+	width: 320px;
   height: 1073px;
 }
 
@@ -366,8 +366,8 @@ aside .aside__box3 .step3 {
 /*PERTNERS*/
 /*IDEAS*/
 .ideas {
-	margin: auto;
-	max-width: 320px;
+	margin: 0px;
+	width: 320px;
   height: 1232px;
   border-bottom: 5px solid #ff4e50;
 }
@@ -480,8 +480,8 @@ aside .aside__box3 .step3 {
 /*IDEAS*/
 /*FOOTER*/
 footer {
-	margin: auto;
-	max-width: 320px;
+	margin: 0px;
+	width: 320px;
   height: 170px;
   text-align: center;
 }
@@ -536,7 +536,15 @@ footer p {
 .footer__logo {
   margin: 8px 0px 0px 0px;
 }
+html {
+	width: 320px;
+	max-width: 320px;
 
+}
+body{
+	width: 320px;
+	max-width: 320px;
+}
 /*FOOTER*/
 
 /*# sourceMappingURL=style.css.map */
