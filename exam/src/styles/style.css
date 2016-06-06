@@ -21,7 +21,7 @@
 }
 
 /*HEADER*/
-.header1 {
+.header {
   margin: 0 auto;
   width: 320px;
   background-image: url(../../img/Promo/Header_photo.png);
@@ -105,13 +105,13 @@
 
 /*HEADER*/
 /*ASIDE*/
-aside {
+.aside {
 	margin: 0 auto;
 	width: 320px;
-  height: 800px;
+ 	height: 800px;
 }
 
-aside h1 {
+.aside h1 {
   font-size: 22px;
   font-family: Montserrat-Bold, sans-serif;
   color: #333333;
@@ -144,7 +144,7 @@ aside h1 {
   margin: 8px 0px 0px 9px;
 }
 
-aside .aside__box1 .step1 {
+.aside .aside__box1 .step1 {
   background-color: #ff4e50;
   border-radius: 26px;
   padding: 2px 11px 2px 11px;
@@ -162,7 +162,7 @@ aside .aside__box1 .step1 {
   left: 24px;
 }
 
-aside .aside__box2 .step2 {
+.aside .aside__box2 .step2 {
   background-color: #ff4e50;
   border-radius: 26px;
   padding: 2px 11px 2px 11px;
@@ -180,7 +180,7 @@ aside .aside__box2 .step2 {
   left: 23px;
 }
 
-aside .aside__box3 .step3 {
+.aside .aside__box3 .step3 {
   background-color: #ff4e50;
   border-radius: 26px;
   padding: 2px 11px 2px 11px;
@@ -480,14 +480,14 @@ aside .aside__box3 .step3 {
 
 /*IDEAS*/
 /*FOOTER*/
-footer {
+.footer {
 	margin: 0 auto;
 	width: 320px;
   height: 170px;
   text-align: center;
 }
 
-footer h1 {
+.footer h1 {
   text-transform: uppercase;
   font-family: Montserrat-Bold, sans-serif;
   color: #ff4e50;
@@ -497,7 +497,7 @@ footer h1 {
   font-size: 16px;
 }
 
-footer h2 {
+.footer h2 {
   font-family: Montserrat-Bold, sans-serif;
   color: #333333;
   text-decoration: none;
@@ -505,13 +505,13 @@ footer h2 {
   font-size: 14px;
 }
 
-footer nav {
+.footer .nav {
   display: inline-block;
   width: 212px;
   height: 19px;
 }
 
-footer nav li a {
+.footer .nav li a {
   font-family: Roboto-Light, sans-serif;
   font-size: 14px;
   color: #676767;
@@ -520,11 +520,11 @@ footer nav li a {
   text-decoration: none;
 }
 
-footer nav li a:hover {
+.footer .nav li a:hover {
   text-decoration: underline;
 }
 
-footer p {
+.footer p {
   text-transform: uppercase;
   font-family: Montserrat-Bold, sans-serif;
   color: #cccccc;
