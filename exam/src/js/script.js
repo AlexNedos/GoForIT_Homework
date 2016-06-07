@@ -10,7 +10,7 @@ $(function () {
 //	AJAX
 	var $button = $('.ideas__button');
 	$.ajax({
-		url: 'https://pixabay.com/api/?key=2683000-931909b1d6f29b69f89649b0a&q=black&image_type=photo&pretty=true',
+		url: 'https://pixabay.com/api/?key=2683000-931909b1d6f29b69f89649b0a&q=technology&image_type=photo&pretty=true',
 		success: function (hits) {
 			for (var i = 0; i < 8; i++) {
 				var $ideasBox = $('.ideas__box' + i);
@@ -54,16 +54,6 @@ $(function () {
 	})($);
 
 //JARUSEL
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 });
 
