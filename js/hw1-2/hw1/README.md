@@ -1,0 +1,1 @@
+#function pow, the same Math.pow, which is to build the specified number to the specified power.
