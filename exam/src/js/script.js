@@ -1,11 +1,11 @@
 $(function () {
 	//ISOTOP IMG
-//	$('.grid').isotope({
-//		itemSelector: '.grid-item',
-//		masonry: {
-//			columnWidth: 15
-//		}
-//	});
+	$('.grid').isotope({
+		itemSelector: '.grid-item',
+		masonry: {
+			columnWidth: 15
+		}
+	});
 	//ISOTOP IMG
 	//	AJAX
 	var $button = $('.ideas__button');
@@ -56,16 +56,12 @@ $(function () {
 
 
 
-
+//AJAX FOR IE8!!!
+	
 	$button.on('click', function () {
-		debugger;
-//	var q, orientation, amount;
-//
-//	q = (query === undefined) ? '' : query;
-//	orientation = 'all';
-//	amount = 7;
 
-	var url = 'https://pixabay.com/api/?key=2683000-931909b1d6f29b69f89649b0a&q=blur&image_type=photo&pretty=true';
+
+	var url = 'http://pixabay.com/api/?key=2683000-931909b1d6f29b69f89649b0a&q=blur&image_type=photo&pretty=true';
 
 	var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
 
