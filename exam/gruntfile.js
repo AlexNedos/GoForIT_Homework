@@ -28,7 +28,7 @@ module.exports = function(grunt) {
       },
       css: {
 			src: ['src/styles/*.css'],
-			dest: 'build/stules.main.min.css'
+			dest: 'build/styles.main.min.css'
       }
     },
     //minify js
@@ -41,8 +41,8 @@ module.exports = function(grunt) {
     //minify css
     cssmin: {
       dist: {
-			src: 'build/stules.main.min.css',
-			dest: 'build/stules.main.min.css'
+			src: 'build/styles.main.min.css',
+			dest: 'build/styles.main.min.css'
       }
     }
 
@@ -54,6 +54,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
+	grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
 
 };
