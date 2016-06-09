@@ -1,21 +1,6 @@
 $(function () {
 	
-	//JARUSEL
-	(function ($) {
-		$(function () {
-
-			$('[data-jcarousel]').each(function () {
-				var el = $(this);
-				el.jcarousel(el.data());
-			});
-
-			$('[data-jcarousel-control]').each(function () {
-				var el = $(this);
-				el.jcarouselControl(el.data());
-			});
-		});
-	})($);
-	//JARUSEL (END)
+	
 	//AJAX FOR IE8
 	var $button = $('.ideas__button');
 
@@ -58,3 +43,19 @@ $(function () {
 	});
 	//ISOTOP IMG (END)
 });
+//JARUSEL
+(function ($) {
+	$(function () {
+
+		$('[data-jcarousel]').each(function () {
+			var el = $(this);
+			el.jcarousel(el.data());
+		});
+
+		$('[data-jcarousel-control]').each(function () {
+			var el = $(this);
+			el.jcarouselControl(el.data());
+		});
+	});
+})($);
+//JARUSEL (END)
