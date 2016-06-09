@@ -390,7 +390,7 @@
 }
 
 .partners__button {
-	/*	background-color: #ff4e50;*/
+	background-color: #ff4e50;
 	border-radius: 26px;
 	border: 2px solid #ff4e50;
 	padding: 9px 16px 11px 12px;
@@ -401,13 +401,17 @@
 }
 
 .partners__button:hover {
-	background-color: #ffcfd0;
+	background-color: white;
 	transition: 1s;
+	a{
+		color: #ff4e50;
+	}
+
 }
 
 .partners__button a {
 	font-family: Montserrat-Bold, sans-serif;
-	color: #ff4e50;
+	color: white;
 	text-decoration: none;
 	padding: 8px 16px 9px 22px;
 	font-size: 14px;
