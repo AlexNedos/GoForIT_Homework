@@ -364,11 +364,13 @@
 	.ideas__box3 p,
 	.ideas__box4 p,
 	.ideas__box7 p {
+		transition: 0.3s;
 		width: 236px;
 		top: -169px;
 	}
 	.ideas__box5 p,
 	.ideas__box6 p {
+		transition: 0.3s;
 		width: 236px;
 		top: -169px;
 		left: 122px;
@@ -379,12 +381,14 @@
 	.ideas__box3:hover p,
 	.ideas__box4:hover p,
 	.ideas__box7:hover p{
+		transition: 0.3s;
 		height: 69px;
 		padding: 142px 0px 97px 0px;
 		margin: -142px 0px 0px 0px; }
 
 	.ideas__box5:hover p,
 	.ideas__box6:hover p{
+		transition: 0.3s;
 		height: 70px;
 		padding: 142px 134px 97px 122px;
 		margin: -142px 0px 0px -122px; }
@@ -795,11 +799,13 @@
 	.ideas__box3 p,
 	.ideas__box4 p,
 	.ideas__box7 p {
+		transition: 0.3s;
 		width: 300px;
 		top: -169px;
 	}
 	.ideas__box5 p,
 	.ideas__box6 p {
+		transition: 0.3s;
 		width: 400px;
 		top: -169px;
 		left: 122px;
@@ -809,12 +815,14 @@
 	.ideas__box3:hover p,
 	.ideas__box4:hover p,
 	.ideas__box7:hover p{
+		transition: 0.3s;
 		height: 69px;
 		padding: 142px 0px 97px 0px;
 		margin: -142px 0px 0px 0px; }
 
 	.ideas__box5:hover p,
 	.ideas__box6:hover p{
+		transition: 0.3s;
 		height: 70px;
 		padding: 142px 99px 97px 122px;
 		margin: -142px 0px 0px -122px; }

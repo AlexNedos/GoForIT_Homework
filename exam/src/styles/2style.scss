@@ -87,17 +87,17 @@
 	border-radius: 26px;
 	background-color: #ff4e50;
 	text-align: center;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 .header__button3:hover {
 	background-color: white;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 .header__button3:hover a {
 	color: #ff4e50;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 .header__button3 a {
@@ -106,7 +106,7 @@
 	text-decoration: none;
 	font-size: 14px;
 	font-family: Montserrat-Bold, sans-serif;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 /*HEADER (END)*/
@@ -399,18 +399,18 @@
 	border-radius: 26px;
 	background-color: #ff4e50;
 	text-align: center;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 .partners__button:hover {
 	background-color: white;
 	color: #ff4e50;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 .partners__button:hover a {
 	color: #ff4e50;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 .partners__button a {
@@ -419,7 +419,7 @@
 	text-decoration: none;
 	font-size: 14px;
 	font-family: Montserrat-Bold, sans-serif;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 /*PERTNERS (END)*/
@@ -489,6 +489,7 @@
 .ideas__box5 p,
 .ideas__box6 p,
 .ideas__box7 p {
+	transition: 0.3s;
 	position: relative;
 	top: -75px;
 	color: white;
@@ -504,6 +505,7 @@
 .ideas__box5:hover p,
 .ideas__box6:hover p,
 .ideas__box7:hover p {
+	transition: 0.3s;
 	background-color: rgba(0, 0, 0, 0.5);
 	padding: 49px 0px 24px 0px;
 	margin: -49px 0px 0px 0px;
@@ -543,13 +545,13 @@
 	font-size: 14px;
 	font-family: Montserrat-Bold, sans-serif;
 	cursor: pointer;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 .ideas__button:hover {
 	background-color: white;
 	color: #ff4e50;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 /*IDEAS (END)*/
