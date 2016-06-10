@@ -441,6 +441,20 @@
   font-size: 23px;
   font-family: Montserrat-Bold, sans-serif; }
 
+.ideas__box1:hover p,
+.ideas__box2:hover p,
+.ideas__box3:hover p,
+.ideas__box4:hover p,
+.ideas__box5:hover p,
+.ideas__box6:hover p,
+.ideas__box7:hover p {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 49px 0px 24px 0px;
+  margin: -49px 0px 0px 0px;
+  height: 48px;
+  border-radius: 5px;
+  cursor: pointer; }
+
 .ideas__pre-search__text {
   margin: 25px 0px 0px 20px;
   color: #989898;
