@@ -1,5 +1,5 @@
 # exam in GoIT
-1.Cross-browser compatibility IE8+
+1.Cross-browser compatibility IE9+
 
 2.Pixel precision for Chrome latest
 
@@ -18,3 +18,8 @@
 9.Using jQuery plugins 
 
 10.Using AJAX for pictures
+
+11.Using Gulp
+
+12.Retina support
+
