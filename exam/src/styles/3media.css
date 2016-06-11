@@ -167,13 +167,13 @@
     height: 57px;
     display: block;
     background-image: url(../img/view/svg/sprite.view.svg);
-    background-position: -60px -10px; }
+    background-position: -55px -8px; }
   .jcarousel-control-next--box2 {
     position: relative;
     top: -760px;
     left: 198px;
     background-image: url(../img/view/svg/sprite.view.svg);
-    background-position: -60px -10px; }
+    background-position: -55px -8px; }
   /*ASIDE*/
   /*PERTNERS*/
   .partners {
@@ -636,7 +636,7 @@
   .ideas__box3 p,
   .ideas__box4 p,
   .ideas__box7 p {
-    transition: 0.3s;
+    transition: 0.5s;
     width: 300px;
     top: -169px; }
   .ideas__box5 p,
