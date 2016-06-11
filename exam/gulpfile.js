@@ -6,20 +6,23 @@ var csso = require('gulp-csso');
 var imagemin = require('gulp-imagemin');
 var svgSprite = require('gulp-svg-sprite');
 var sass = require('gulp-sass');
+var series = require('stream-series');
 
-// Concat and minify (js, css)
-gulp.task('minify', function(){
-	gulp.src('./src/js/*.js')
+// Concat and minify (js)
+gulp.task('conc-min-js', function(){
+	return series(gulp.src('./src/js/jquery-1.12.3.min.js'),gulp.src('./src/js/jquery.jcarousel-min.js'),gulp.src('./src/js/isotope.pkgd.min.js'),gulp.src('./src/js/script.js'))
 		.pipe(concat('script.main.min.js'))
 		.pipe(gulp.dest('./build'))
 		.pipe(uglify())
 		.pipe(gulp.dest('./build'));
-	gulp.src('./src/styles/*.css')
-		.pipe(concat('styles.main.min.css'))
-		.pipe(csso())
-		.pipe(gulp.dest('./build'))
 });
-
+// Concat and minify (css)
+gulp.task('conc-min-css', function(){
+return series(gulp.src('./src/styles/reset.css'),gulp.src('./src/styles/style.css'),gulp.src('./src/styles/media.css'))
+	.pipe(concat('styles.main.min.css'))
+	.pipe(csso())
+	.pipe(gulp.dest('./build'))
+});
 // minify img
 gulp.task('images', function() {
 	gulp.src('./img/**/*.png')
@@ -45,6 +48,7 @@ config = {
 		},
 	}
 };
+
 gulp.task('svgSprite', function() {
 gulp.src('img/svg/*.svg')
 	.pipe(svgSprite(config))
@@ -59,6 +63,6 @@ gulp.task('sass', function () {
 
 
 gulp.task('default', function() {
-	gulp.run('minify', 'images', 'svgSprite', 'sass');
+	gulp.run('conc-min-js', 'conc-min-css', 'images', 'svgSprite', 'sass');
 	
 });

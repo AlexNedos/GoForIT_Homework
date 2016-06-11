@@ -1,0 +1,35 @@
+@media only screen and (min-width:777px) and (max-width:1439px) {
+	/*HEADER*/
+	@import '../src/media/teblet/header';
+	/*HEADER (END)*/
+	/*ASIDE*/
+	@import '../src/media/teblet/aside';
+	/*ASIDE (END)*/
+	/*PERTNERS*/
+	@import '../src/media/teblet/partners';
+	/*PERTNERS (END)*/
+	/*IDEAS*/
+	@import '../src/media/teblet/ideas';
+	/*IDEAS (END)*/
+	/*FOOTER*/
+	@import '../src/media/teblet/footer';
+	/*FOOTER (END)*/
+}
+
+@media only screen and (min-width: 1286px) {
+	/*HEADER*/
+	@import '../src/media/desktop/header';
+	/*HEADER (END)*/
+	/*ASIDE*/
+	@import '../src/media/desktop/aside';
+	/*ASIDE (END)*/
+	/*PERTNERS*/
+	@import '../src/media/desktop/partners';
+	/*PERTNERS (END)*/
+	/*IDEAS*/
+	@import '../src/media/desktop/ideas';
+	/*IDEAS (END)*/
+	/*FOOTER*/
+	@import '../src/media/desktop/footer';
+	/*FOOTER (END)*/
+}
