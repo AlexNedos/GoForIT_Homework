@@ -1,0 +1,168 @@
+.aside {
+	width: 768px;
+	height: 530px;
+}
+.aside h1 {
+	margin: 97px 0px 0px 244px;
+}
+.aside__box1 {
+	width: 237px;
+	height: 402px;
+	margin: 35px 0px 0px 10px;
+	float: left;
+}
+.aside__box2 {
+	width: 237px;
+	height: 402px;
+	margin: 35px 0px 0px 19px;
+	float: left;
+}
+.aside__box3 {
+	width: 237px;
+	height: 402px;
+	margin: 35px 0px 0px 521px;
+	overflow: hidden;
+}
+.aside .aside__box1 .step1 {
+	background-color: #ff4e50;
+	border-radius: 26px;
+	padding: 2px 11px 2px 11px;
+	width: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Montserrat-Regular, sans-serif;
+	color: white;
+	text-decoration: none;
+	font-size: 10px;
+	letter-spacing: 2px;
+	display: inline-block;
+	position: relative;
+	top: -192px;
+	left: 23px;
+}
+.aside .aside__box2 .step2 {
+	background-color: #ff4e50;
+	border-radius: 26px;
+	padding: 2px 11px 2px 11px;
+	width: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Montserrat-Regular, sans-serif;
+	color: white;
+	text-decoration: none;
+	font-size: 10px;
+	letter-spacing: 2px;
+	display: inline-block;
+	position: relative;
+	top: -145px;
+	left: 23px;
+}
+.aside .aside__box3 .step3 {
+	background-color: #ff4e50;
+	border-radius: 26px;
+	padding: 2px 11px 2px 11px;
+	width: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Montserrat-Regular, sans-serif;
+	color: white;
+	text-decoration: none;
+	font-size: 10px;
+	letter-spacing: 2px;
+	display: inline-block;
+	position: relative;
+	top: -192px;
+	left: 25px;
+}
+.aside__box1 h1,
+.aside__box2 h1,
+.aside__box3 h1 {
+	margin: 228px 0px 0px 20px;
+	width: 215px;
+}
+.aside__box1 h1 {
+	position: relative;
+	top: -405px;
+}
+.aside__box2 h1 {
+	position: relative;
+	top: -358px;
+}
+.aside__box3 h1 {
+	position: relative;
+	top: -405px;
+	left: 2px;
+}
+.aside__box1 p,
+.aside__box2 p,
+.aside__box3 p {
+	padding: 13px 0px 0px 17px;
+	width: 207px;
+}
+.aside__box1 p {
+	position: relative;
+	top: -405px;
+	left: 2px;
+}
+.aside__box2 p {
+	position: relative;
+	top: -360px;
+	left: 4px;
+}
+.aside__box3 p {
+	position: relative;
+	top: -406px;
+	left: 4px;
+}
+/** Carousel **/
+.jcarousel {
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+.desk {
+	display: none;
+}
+.jcarousel ul {
+	width: 20000em;
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.jcarousel li {
+	float: left;
+}
+/** Carousel Controls **/
+.jcarousel-control-prev {
+	position: relative;
+	top: -748px;
+	left: 22px;
+	width: 30px;
+	height: 57px;
+	display: block;
+	background-image: url(../img/view/svg/sprite.view.svg);
+	background-position: -10px -10px;
+}
+.jcarousel-control-prev--box2 {
+	position: relative;
+	top: -703px;
+	left: 11px;
+	background-image: url(../img/view/svg/sprite.view.svg);
+	background-position: -10px -10px;
+}
+.jcarousel-control-next {
+	position: relative;
+	top: -806px;
+	left: 186px;
+	width: 30px;
+	height: 57px;
+	display: block;
+	background-image: url(../img/view/svg/sprite.view.svg);
+	background-position: -55px -8px; }
+.jcarousel-control-next--box2 {
+	position: relative;
+	top: -760px;
+	left: 198px;
+	background-image: url(../img/view/svg/sprite.view.svg);
+	background-position: -55px -8px; }

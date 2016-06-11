@@ -1,0 +1,88 @@
+.header {
+	margin: 0 auto;
+	width: 320px;
+	height: 540px;
+	background-image: url(../img/Promo/Header_photo.png);
+}
+
+.header__button1,
+.header__button2 {
+	display: inline-block;
+	margin: 20px -68px 24px 83px;
+}
+
+.header__button1 a,
+.header__button2 a {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: Montserrat-Bold, sans-serif;
+}
+
+.header__button2 {
+	padding: 8px 16px 9px 17px;
+	border: 2px solid white;
+	border-radius: 26px;
+}
+
+.header__text {
+	margin: 92px 0px 0px 0px;
+	width: 320px;
+	height: 175px;
+	text-align: center;
+}
+
+.header__text h2 {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-family: Montserrat-Bold, sans-serif;
+}
+
+.header__text h1 {
+	margin: 33px 0px -27px 0px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: Montserrat-Bold, sans-serif;
+}
+
+.header__text p {
+	margin: 40px 0px 0px 47px;
+	width: 226px;
+	color: white;
+	font-size: 18px;
+	font-family: Roboto-Light, sans-serif;
+	line-height: 21px;
+}
+
+.header__button3 {
+	margin: 14px 0px 0px 17px;
+	padding: 10px 14px 10px 15px;
+	width: 250px;
+	border: 2px solid #ff4e50;
+	border-radius: 26px;
+	background-color: #ff4e50;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.header__button3:hover {
+	background-color: white;
+	transition: 0.3s;
+}
+
+.header__button3:hover a {
+	color: #ff4e50;
+	transition: 0.3s;
+}
+
+.header__button3 a {
+	padding: 8px 16px 9px 17px;
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: Montserrat-Bold, sans-serif;
+	transition: 0.3s;
+}

@@ -1,0 +1,159 @@
+.aside {
+	margin: 0 auto;
+	width: 320px;
+	height: 800px;
+}
+
+.aside h1 {
+	display: block;
+	margin: 37px 0px 0px 16px;
+	width: 300px;
+	color: #333333;
+	font-size: 22px;
+	font-family: Montserrat-Bold, sans-serif;
+}
+
+.aside__box1 {
+	margin: 16px 0px 0px 9px;
+	width: 302px;
+	height: 241px;
+	border-radius: 4px;
+	background-image: url(../img/How-it-works/step-1.png);
+	background-repeat: no-repeat;
+}
+
+.aside__box2 {
+	margin: 9px 0px 0px 9px;
+	width: 302px;
+	height: 241px;
+	border-radius: 4px;
+	background-image: url(../img/How-it-works/step-2.png);
+	background-repeat: no-repeat;
+}
+
+.aside__box3 {
+	margin: 8px 0px 0px 9px;
+	width: 302px;
+	height: 241px;
+	border-radius: 4px;
+	background-image: url(../img/How-it-works/step-3.png);
+	background-repeat: no-repeat;
+}
+
+.aside__box1 div ul li img {
+	border-radius: 4px;
+}
+
+.aside__box2 div ul li img {
+	border-radius: 4px;
+}
+
+.overlay {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 99%;
+	border-radius: 4px;
+	background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+	background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+	background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.aside .aside__box1 .step1 {
+	position: relative;
+	top: 67px;
+	left: 24px;
+	display: inline-block;
+	padding: 2px 11px 2px 11px;
+	width: 48px;
+	border-radius: 26px;
+	background-color: #ff4e50;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 10px;
+	font-family: Montserrat-Regular, sans-serif;
+}
+
+.aside .aside__box2 .step2 {
+	position: relative;
+	top: 97px;
+	left: 23px;
+	display: inline-block;
+	padding: 2px 11px 2px 11px;
+	width: 48px;
+	border-radius: 26px;
+	background-color: #ff4e50;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 10px;
+	font-family: Montserrat-Regular, sans-serif;
+}
+
+.aside .aside__box3 .step3 {
+	position: relative;
+	top: 68px;
+	left: 24px;
+	display: inline-block;
+	padding: 2px 11px 2px 11px;
+	width: 48px;
+	border-radius: 26px;
+	background-color: #ff4e50;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 10px;
+	font-family: Montserrat-Regular, sans-serif;
+}
+
+.aside__box1 h1,
+.aside__box2 h1,
+.aside__box3 h1 {
+	margin: 84px 0px 0px 21px;
+	width: 270px;
+	color: white;
+	font-size: 24px;
+	font-family: Montserrat-Bold, sans-serif;
+	line-height: 29px;
+}
+
+.aside__box1 p,
+.aside__box2 p,
+.aside__box3 p {
+	display: block;
+	padding: 13px 0px 0px 20px;
+	width: 260px;
+	color: #cccccc;
+	font-size: 14px;
+	font-family: Roboto-Light, sans-serif;
+	line-height: 16px;
+}
+
+.aside__box2 h1 {
+	margin: 114px 0px 0px 20px;
+}
+
+.aside__box2 p {
+	padding: 13px 0px 0px 21px;
+	letter-spacing: 0.1px;
+}
+
+/** Carousel **/
+.jcarousel {
+	display: none;
+}
+
+.jcarousel-control-prev {
+	display: none;
+}
+
+.jcarousel-control-next {
+	display: none;
+}

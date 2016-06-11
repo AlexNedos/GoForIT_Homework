@@ -52,7 +52,7 @@ gulp.src('img/svg/*.svg')
 });
 
 gulp.task('sass', function () {
-	return gulp.src('src/styles/*.scss')
+	return gulp.src('src/styles/scss/build/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest('src/styles/'));
 });

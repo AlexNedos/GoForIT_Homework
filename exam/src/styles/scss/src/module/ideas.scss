@@ -1,0 +1,129 @@
+.ideas {
+	margin: 0 auto;
+	width: 320px;
+	height: 1232px;
+	border-bottom: 5px solid #ff4e50;
+}
+
+.ideas h1 {
+	margin: 15px 0px 0px 21px;
+	width: 278px;
+	color: #333333;
+	text-align: center;
+	font-size: 22px;
+	font-family: Montserrat-Bold, sans-serif;
+	line-height: 25px;
+}
+
+.ideas__box1 {
+	padding: 16px 0px 0px 10px;
+}
+
+.ideas__box2 {
+	margin: 9px 0px 0px 10px;
+}
+
+.ideas__box3 {
+	margin: 10px 0px 0px 10px;
+}
+
+.ideas__box4 {
+	margin: 12px 0px 0px 10px;
+}
+
+.ideas__box5 {
+	margin: 12px 0px 0px 10px;
+}
+
+.ideas__box6 {
+	margin: 14px 0px 0px 10px;
+}
+
+.ideas__box7 {
+	margin: 14px 0px 0px 10px;
+}
+
+.ideas__box1 img,
+.ideas__box2 img,
+.ideas__box3 img,
+.ideas__box4 img,
+.ideas__box5 img,
+.ideas__box6 img,
+.ideas__box7 img,
+.grid-item {
+	width: 300px;
+	height: 120px;
+	border-radius: 5px;
+}
+
+.ideas__box1 p,
+.ideas__box2 p,
+.ideas__box3 p,
+.ideas__box4 p,
+.ideas__box5 p,
+.ideas__box6 p,
+.ideas__box7 p {
+	transition: 0.3s;
+	position: relative;
+	top: -75px;
+	color: white;
+	text-align: center;
+	font-size: 23px;
+	font-family: Montserrat-Bold, sans-serif;
+}
+
+.ideas__box1:hover p,
+.ideas__box2:hover p,
+.ideas__box3:hover p,
+.ideas__box4:hover p,
+.ideas__box5:hover p,
+.ideas__box6:hover p,
+.ideas__box7:hover p {
+	transition: 0.3s;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 49px 0px 24px 0px;
+	margin: -49px 0px 0px 0px;
+	height: 48px;
+	border-radius: 5px;
+	cursor: pointer; }
+
+.ideas__pre-search__text {
+	margin: 25px 0px 0px 20px;
+	color: #989898;
+	font-size: 18px;
+	font-family: Roboto-Light, sans-serif;
+}
+
+.ideas__search {
+	margin: 17px 0px 0px 18px;
+	padding: 2px 0px 0px 15px;
+	width: 263px;
+	height: 36px;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	letter-spacing: 0.3px;
+	font-family: Roboto-Light, sans-serif;
+}
+
+.ideas__button {
+	margin: 10px 0px 0px 17px;
+	padding: 11px 14px 7px 15px;
+	width: 250px;
+	height: 18px;
+	border: 2px solid #ff4e50;
+	border-radius: 26px;
+	background-color: #ff4e50;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: Montserrat-Bold, sans-serif;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.ideas__button:hover {
+	background-color: white;
+	color: #ff4e50;
+	transition: 0.3s;
+}
