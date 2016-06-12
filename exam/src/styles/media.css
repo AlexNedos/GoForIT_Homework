@@ -1,4 +1,5 @@
 @media only screen and (min-width: 777px) and (max-width: 1439px) {
+  /*HEADER*/
   .header {
     background-image: url(../img/Promo/Header_photo_tablet.png);
     width: 768px;
@@ -26,7 +27,7 @@
     width: 212px;
     margin: 156px 0px 0px 270px;
     transition: 1s; }
-  /*HEADER*/
+  /*HEADER (END)*/
   /*ASIDE*/
   .aside {
     width: 768px;
@@ -174,7 +175,7 @@
     left: 198px;
     background-image: url(../img/view/svg/sprite.view.svg);
     background-position: -55px -8px; }
-  /*ASIDE*/
+  /*ASIDE (END)*/
   /*PERTNERS*/
   .partners {
     width: 768px;
@@ -237,7 +238,7 @@
   .sprite--blue {
     top: 94px;
     left: 178px; }
-  /*PERTNERS*/
+  /*PERTNERS (END)*/
   /*IDEAS*/
   .ideas {
     width: 768px;
@@ -325,7 +326,7 @@
     width: 159px;
     margin: -38px 0px 0px 429px;
     padding: 13px 0px 9px 0px; }
-  /*IDEAS*/
+  /*IDEAS (END)*/
   /*FOOTER*/
   .footer {
     width: 768px;
@@ -346,9 +347,10 @@
     margin: -13px 0px 0px 610px; }
   .footer__logo {
     margin: 8px 0px 0px 577px; }
-  /*FOOTER*/ }
+  /*FOOTER (END)*/ }
 
 @media only screen and (min-width: 1286px) {
+  /*HEADER*/
   .header {
     background-image: url(../img/Promo/Header_photo_desktop.png);
     width: 1440px; }
@@ -365,7 +367,7 @@
     margin: 173px 0px 0px 468px; }
   .header__button3 {
     margin: 156px 0px 0px 608px; }
-  /*HEADER*/
+  /*HEADER (END)*/
   /*ASIDE*/
   .aside {
     width: 1440px;
@@ -508,7 +510,7 @@
     position: relative;
     top: -647px;
     left: 251px; }
-  /*ASIDE*/
+  /*ASIDE (END)*/
   /*PERTNERS*/
   .partners {
     width: 1440px;
@@ -580,7 +582,7 @@
   .sprite--blue {
     top: 94px;
     left: 279px; }
-  /*PERTNERS*/
+  /*PERTNERS (END)*/
   /*IDEAS*/
   .ideas {
     width: 1440px;
@@ -669,7 +671,7 @@
     width: 159px;
     margin: -38px 0px 0px 765px;
     padding: 13px 0px 9px 0px; }
-  /*IDEAS*/
+  /*IDEAS (END)*/
   /*FOOTER*/
   .footer {
     width: 1440px;
@@ -690,4 +692,4 @@
     margin: -13px 0px 0px 860px; }
   .footer__logo {
     margin: 8px 0px 0px 829px; }
-  /*FOOTER*/ }
+  /*FOOTER (END)*/ }
