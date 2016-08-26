@@ -18,14 +18,15 @@
 			<button class="wrapper__controlls__item__add">Add</button>
 		</div>
 	</script>
-	<script type="text/temp" id="list__template">
-		<% for(var i = 0; i < data.length; i++){ %>
-			<li class="list__template__text" contenteditable="true">
-				<%= data[i] %>
-			</li>
-			<span data-value="<%= data[i] %>" class="list__template__item__delete"></span>
-			<% }; %>
+	<script> 
+		function a() {
+			setTimeout(alert('ks'), 1000)
+		}
+		function b() {
+			alert('sda')
+		}
 	</script>
+	
 	<script src="js/tmpl.js"></script>
 	<script data-main="js/script.js" src="js/require.js"></script>
 </body>
